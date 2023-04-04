@@ -30,7 +30,7 @@ const Home = () => {
        
       </section>
       <Section2 />
-  <Section3 />
+    <Section3 />
         </section>
     )
 }
