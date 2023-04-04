@@ -70,7 +70,8 @@
   }
   
   .navbar-item {
-    margin: 0 1rem; /* add margin to separate items */
+    margin: 0 1rem; 
+    list-style-type: none;
   }
   
   .navbar-link {
@@ -78,9 +79,13 @@
     text-decoration: none;
     font-size: 1.2rem;
     transition: all 0.3s ease-out;
+    
   }
   
   .navbar-link:hover {
     color: #f00;
+  }
+  #track-btn {
+    background-color : red
   }
   
