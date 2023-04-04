@@ -7,7 +7,7 @@ import Section2 from './Section2';
 
 const Home = () => {
     const backgroundStyle = {
-        backgroundImage: "url('https://kaha6.com/wp-content/uploads/Nepal-Can-Move2.png')",
+        backgroundImage: "url('https://i0.wp.com/www.nepalcanmove.com/wp-content/uploads/2022/01/DSC00312-R-Cover-NCMDelivery-2.jpg?fit=768%2C491&ssl=1')",
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
