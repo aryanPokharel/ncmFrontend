@@ -2,6 +2,7 @@
 import { Button } from '@mui/material';
 import { useState } from 'react'
 import Section2 from './Section2';
+import Section3 from './Section3';
 
 
 
@@ -29,6 +30,7 @@ const Home = () => {
        
       </section>
       <Section2 />
+  <Section3 />
         </section>
     )
 }
