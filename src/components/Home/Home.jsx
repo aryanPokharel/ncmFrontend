@@ -14,26 +14,26 @@ import Section5 from './Section5';
 import Section6 from './Section6';
 
 const Home = () => {
-    
-    return (
-        <section>
-          
-          <Navbar />
-            <Section1 />
+
+  return (
+    <section>
+
+      <Navbar />
+      <Section1 />
       <Section2 />
-    <Section3 />
-    <Section4 />
-    <Section5 />
-    <Section6 />
-    <Footer />
-    {/* <Box sx={{ '& > :not(style)': { m: 1 } }}>
+      <Section3 />
+      <Section4 />
+      <Section5 />
+      <Section6 />
+      <Footer />
+      {/* <Box sx={{ '& > :not(style)': { m: 1 } }}>
       <Fab color="primary" aria-label="add">
         <AddIcon />
       </Fab>
       
     </Box> */}
-        </section>
-    )
+    </section>
+  )
 }
 
 export default Home;
