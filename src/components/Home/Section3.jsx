@@ -12,7 +12,9 @@ const StoryCard = (props) => {
     sx={{ height: 200, objectFit: 'cover' }} 
     image={props.imageUrl}
   /> */}
+  <div id='imageSection'>
   <img src={props.imageUrl} width={"100%" } height={"240vh"} />
+  </div>
   <CardContent>
     <Typography gutterBottom variant="h5" component="div">
       {props.title}
