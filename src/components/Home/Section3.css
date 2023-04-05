@@ -8,7 +8,8 @@
   }
   
   .card {
-    height: 80%;
+    margin: 3%;
+    height: 97%;
     flex-basis: 30%;
     padding: 2rem;
     background-color: lightgray;
@@ -22,5 +23,8 @@
   
   .card h4 {
     font-size: 1.2rem;
+  }
+  #track-btn{
+    margin: 1%;
   }
   

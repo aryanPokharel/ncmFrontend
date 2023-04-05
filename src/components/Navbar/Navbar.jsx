@@ -5,9 +5,9 @@ import Button from '@mui/material/Button';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  // const toggleMenu = () => {
+  //   setIsOpen(!isOpen);
+  // };
 
   return (
     <nav className="navbar">
