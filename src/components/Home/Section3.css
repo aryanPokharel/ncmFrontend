@@ -1,6 +1,10 @@
+#section3{
+  padding: 3%;
+  justify-content: center;
+  align-items: center;
+}
 #section3Card{
-    max-width: 35%;
-    margin: 10;
+    max-width: 100%;
 }
 .cards-section {
     display: flex;
