@@ -6,6 +6,34 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import './Section6.css'
 
+import { useTheme } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import Button from '@mui/material/Button';
+
+
+const GetInTouch = ()=> {
+  const theme = useTheme();
+
+  return (
+    <Card sx={{ display: 'flex' }} id='getInTouch'>
+      <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+        <CardContent sx={{ flex: '1 0 auto' }}>
+          <Typography component="div" variant="h5" id='getInTouchHeading'>
+          Would you like to start with us?
+          </Typography>
+          <Typography variant="subtitle1" color="text.secondary" component="div">
+          Please contact us and one of our relationship managers will guide you with our easy onboarding process. Lets us help you meet your goals.
+          </Typography>
+        </CardContent>
+        
+      </Box>
+      <Button variant="contained" id='track-btn'>Get Started</Button>
+    </Card>
+  );
+}
+
 const Section6 = () => {
     const [expanded, setExpanded] = React.useState(false);
 
@@ -14,7 +42,7 @@ const Section6 = () => {
     };
 
     return (
-        <div id='accordionHolder'>
+        <div id='sectionHolder'>
             <Accordion className='accordions' expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
@@ -77,6 +105,7 @@ const Section6 = () => {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
+            <GetInTouch />
             
         </div>
     );

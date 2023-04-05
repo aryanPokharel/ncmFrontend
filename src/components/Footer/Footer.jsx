@@ -4,16 +4,15 @@ import './Footer.css'
 function Footer() {
   return (
     <>
-  {/* Footer */}
+
   <footer className="text-center text-lg-start bg-dark text-muted">
-    {/* Section: Social media */}
+ 
     <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-      {/* Left */}
+  
       <div className="me-5 d-none d-lg-block">
         <span>Get connected with us on social networks:</span>
       </div>
-      {/* Left */}
-      {/* Right */}
+    
       <div>
         <a href="" className="me-4 text-reset">
           <i className="fab fa-facebook-f" />
@@ -46,8 +45,8 @@ function Footer() {
           <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             {/* Content */}
             <h6 className="text-uppercase fw-bold mb-4">
-              <i className="fas fa-gem me-3" />
-              Company name
+            <img src={"https://i0.wp.com/www.nepalcanmove.com/wp-content/uploads/2022/01/NCM-Logo-White.png?resize=300%2C150&ssl=1"} className="card-img-top" width={"100%"} />
+              Nepal Can Move
             </h6>
             <p>
               Here you can use rows and columns to organize your footer content.
@@ -112,7 +111,7 @@ function Footer() {
             {/* Links */}
             <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
             <p>
-              <i className="fas fa-home me-3" /> New York, NY 10012, US
+              <i className="fas fa-home me-3" /> Nepal Can Move Building, 51 Muni Bhairab Marga, Tinkune, KMC-32, Kathmandu, Nepal
             </p>
             <p>
               <i className="fas fa-envelope me-3" />
@@ -136,9 +135,9 @@ function Footer() {
       className="text-center p-4"
       style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
     >
-      © 2021 Copyright:
-      <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
-        MDBootstrap.com
+      © 2023 Copyright:
+      <a className="text-reset fw-bold" href="https://www.nepalcangroup.com/">
+        NepalCanGroup.com
       </a>
     </div>
     {/* Copyright */}

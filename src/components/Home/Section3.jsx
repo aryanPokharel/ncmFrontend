@@ -21,7 +21,7 @@ const Section3 = () => {
         {Array.from(Array(3)).map((_, index) => (
           <Grid xs={3} sm={4} md={4} key={index}>
             {index == 0 ?
-              <StoryCard imageUrl={"https://thumbs.dreamstime.com/b/indian-village-rickshaw-rider-street-transportation-indian-village-rickshaw-rider-street-transportation-travelling-156761852.jpg"}
+              <StoryCard imageUrl={"https://i0.wp.com/www.nepalcanmove.com/wp-content/uploads/2022/01/DSC00276-Square-NCM-Delivery-R-2.1.jpg?w=511&ssl=1"}
                 title={"Villages as important as towns"}
                 content={"While many focus on big cities we have focused on expanding our services all over Nepal. Our experience shows it is the villages and small towns that need ecommerce more."} />
               :
@@ -30,7 +30,7 @@ const Section3 = () => {
                   title={"Transport is the critical factor"}
                   content={"The logistics bottleneck is because of poor and unprofessional transport infrastructure. We started owning and managing our own fleet to provide secure & timely service."} />
                 :
-                <StoryCard imageUrl={"https://media.cntraveler.com/photos/609efad86ed0f922b14c133a/16:9/w_2580,c_limit/Incredible%20Suspension%20Bridges%20Around%20the%20World_Golden%20Skybridge_Photo%20credit%20Pursuit,%20Chris%20Amat_IMG_3334-3000x2001-2c58e9a3-1ba0-40a7-b6bf-4633f3e07d26.jpg"}
+                <StoryCard imageUrl={"https://i0.wp.com/www.nepalcanmove.com/wp-content/uploads/2022/01/DSC00332-1-Square-Walking-Bridge-R-2.jpg?w=512&ssl=1"}
                   title={"Give us the challenge we will take it"}
                   content={"We have expanded our services to Karnali and far west, often delivering on foot, human back and donkeys. It is a challenge, but we are here to provide services to Humla and Pyuthan as much as Dharan and Birtamod."} />
               )
