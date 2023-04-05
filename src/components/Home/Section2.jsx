@@ -19,7 +19,7 @@ const bull = (
 const Section2 = () => {
     
     return (
-        <section id="my-section">
+        <section id="section2">
          <div className="container">
       <h1>How can we help you?</h1>
       <p id="section2Content">We have developed a state of art technology, a well-trained team, one of the largest network of branches and a comprehensive vehicle fleet to solve the logistics problems of Nepal.</p>
