@@ -19,10 +19,10 @@ const bull = (
 const Section2 = () => {
     
     return (
-        <section className="my-section">
+        <section id="my-section">
          <div className="container">
       <h1>How can we help you?</h1>
-      <p>We have developed a state of art technology, a well-trained team, one of the largest network of branches and a comprehensive vehicle fleet to solve the logistics problems of Nepal.</p>
+      <p id="section2Content">We have developed a state of art technology, a well-trained team, one of the largest network of branches and a comprehensive vehicle fleet to solve the logistics problems of Nepal.</p>
       <div className="box-container">
         <CustomCard icon={"DirectionsBoatIcon"} title={"Cargo"} content={"We work closely with our partner freight forwarders to bring any cargo merchandise from anywhere in the world to Nepal."}/>
         <CustomCard icon={"AllInboxIcon"} title={"Courier & delivery"} content={"We provide convenient home &; office pickup, and delivery to most locations in Nepal. We also provide affordable counter delivery to most of our branches."}/>

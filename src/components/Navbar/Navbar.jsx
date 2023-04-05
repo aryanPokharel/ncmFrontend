@@ -25,7 +25,7 @@ const Navbar = () => {
         <li className="navbar-item"><a href="/about" className="navbar-link">Login</a></li>
         <Button variant="contained" id='track-btn'>Track</Button>
       </ul>
-      
+
     </nav>
   );
 };

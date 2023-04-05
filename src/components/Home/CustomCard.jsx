@@ -8,24 +8,22 @@ import './CustomCard.css'
 
 const CustomCard = (props) => {
     return (
-        
       <div id='cards'>
-        {
-          (props.icon == "DirectionsBoatIcon") ? <DirectionsBoatIcon /> : 
-          ((props.icon == "AllInboxIcon") ? <AllInboxIcon /> : 
-          ((props.icon == "WarehouseIcon") ? <WarehouseIcon /> : 
-          (props.icon == "LocalShippingIcon") ? <LocalShippingIcon /> : 
-          (props.icon == "StorageIcon") ? <StorageIcon /> :
-          <AccountTreeIcon />
-          ))
-          
-        }
-        <div className="card-body">
-          <h5 className="card-title">{props.title}</h5>
-          <p className="card-text">{props.content}</p>
-        </div>
+      {
+        (props.icon == "DirectionsBoatIcon") ? <DirectionsBoatIcon /> : 
+        ((props.icon == "AllInboxIcon") ? <AllInboxIcon /> : 
+        ((props.icon == "WarehouseIcon") ? <WarehouseIcon /> : 
+        (props.icon == "LocalShippingIcon") ? <LocalShippingIcon /> : 
+        (props.icon == "StorageIcon") ? <StorageIcon /> :
+        <AccountTreeIcon />
+        ))
+        
+      }
+      <div className="card-body">
+        <h5 className="card-title">{props.title}</h5>
+        <p className="card-text">{props.content}</p>
       </div>
- 
+    </div>
     )
   }
 
