@@ -1,0 +1,9 @@
+#cards {
+    max-width : 30%;
+    max-height: 10%;
+    background-color: 'red';   
+}
+#cards:hover {
+    background-color: 'red';
+    border-radius: 10%;
+}

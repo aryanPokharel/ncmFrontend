@@ -1,0 +1,26 @@
+#section3Card{
+    max-width: 35%;
+    margin: 10;
+}
+.cards-section {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .card {
+    height: 80%;
+    flex-basis: 30%;
+    padding: 2rem;
+    background-color: lightgray;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card h4 {
+    font-size: 1.2rem;
+  }
+  
