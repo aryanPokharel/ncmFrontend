@@ -1,18 +1,37 @@
 import Button from '@mui/material/Button';
 import './Section3.css'
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Unstable_Grid2';
+import * as React from 'react';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
 const StoryCard = (props) => {
   return (
-    <div className="card" id='section3Card'>
-      <div id='storyCardImgSection'>
-        <img src={props.imageUrl} className="card-img-top"/>
-      </div>
-      <div className="card-body">
-        <h5 className="card-title">{props.title}</h5>
-        <p className="card-text">{props.content}</p>
-      </div>
-    </div>
+    <Card sx={{ maxWidth: 345 }}>
+      <CardMedia
+        sx={{ height: 140 }}
+        image={props.imageUrl}
+        title="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+        {props.title}
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+        {props.content}
+        </Typography>
+      </CardContent>   
+    </Card>
+    // <div className="card" id='section3Card'>
+    //   <div id='storyCardImgSection'>
+    //     <img src={props.imageUrl} className="card-img-top"/>
+    //   </div>
+    //   <div className="card-body">
+    //     <h5 className="card-title">{props.title}</h5>
+    //     <p className="card-text">{props.content}</p>
+    //   </div>
+    // </div>
   )
 }
 
