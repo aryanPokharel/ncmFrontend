@@ -5,7 +5,9 @@ import Grid from '@mui/material/Unstable_Grid2';
 const StoryCard = (props) => {
   return (
     <div className="card" id='section3Card'>
-      <img src={props.imageUrl} className="card-img-top" width={"60%"} height={'60%'} />
+      <div id='storyCardImgSection'>
+        <img src={props.imageUrl} className="card-img-top"/>
+      </div>
       <div className="card-body">
         <h5 className="card-title">{props.title}</h5>
         <p className="card-text">{props.content}</p>
