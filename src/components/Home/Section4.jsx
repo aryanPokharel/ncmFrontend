@@ -3,6 +3,7 @@ import { experimentalStyled as styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Unstable_Grid2';
+import './Section4.css'
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -13,8 +14,8 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 const Section4 = ()=> {
     return (
-      <div>
-        <h1>Numbers Speak</h1>
+      <div id='section4'>
+        <h1>Numbers Speak!</h1>
         <h3>We have made a good start to realize our Vision 2030.</h3>
       
       <Box sx={{ flexGrow: 1 }}>
