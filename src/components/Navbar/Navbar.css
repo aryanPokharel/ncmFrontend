@@ -1,17 +1,17 @@
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    
+  .navbar {
     top: 0;
     left: 0;
     right: 0;
   }
-
+  #navbarContainer{
+    background-color: gray;
+  }
+  #linkSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   #navbarLinkSection{
     justify-content: space-evenly;
     width: 100%;
@@ -22,9 +22,8 @@
     margin-inline: 50px;
     color: #fff;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 2.2rem;
     transition: all 0.3s ease-out;
-    
   }
   
   .navbar-link:hover {

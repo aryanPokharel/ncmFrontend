@@ -33,7 +33,7 @@ const Navbar = () => {
 
         <nav className="navbar navbar-expand-lg navbar-dark bg-transparent">
 
-          <div className="container-fluid">
+          <div className="container-fluid" id='navbarContainer'>
 
             <button
               className="navbar-toggler"
@@ -51,14 +51,14 @@ const Navbar = () => {
 
               <a className="navbar-brand mt-2 mt-lg-0" href="#">
                 <img
-                  src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
-                  height={15}
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEXdHj/////cK0fcJkPdHT3bMU/dFDnhXXPhaXzcAC/aMErcADPcADHcCDXsrrnonqXvusLdQVfmj5jqo6/pnqr11dnzys7dUmf03N7kg4znpavcQlvrqLTu0tXvzdLtwsnjcoPbACLbACjbACHhd4bvusPjk56mka92AAACCElEQVR4nO3c23ISURBAURQykQQ1MSqo5Krx/z9RX3iwCk+PBLo5uPYH9MyqqXk6l8nryWk3nRD2HmH/EfYfYf8R9h9h/xH2H2H/EfYfYf8Rtpot5lGLYY/vulsvEA7L1aeo1Zdy4kuE56/i3l/u8213ibARIWFShI0ICZMibERImBRhI0LCpAgbERImRdiIkDApwkaEhEkRNiIkTOrgwvksp2GY1Qi/nl0n9e1iO/HQwsTWi1MX3mz/5U9J6BsSEpZHSEhYHyEhYX2EhIT1ERIS1kdISFgfISFhfYSEhPWta4S363dhdyPm3MdjHrYfjD/4XozHRdTjhxFzzp/COX85+X8E+2nejhG+2fnmAsJGhISbCAmDCBsREm4iJAwibERIuImQMIiwESHhJkLCIMJGhISbCAmDCBv1LhzCG+WflmOE38M5o9aA9y8cflw9XwWNWX9fxWOeb0uElzcjHpvYAYQfq01/RkhIWB8hIWF9hISE9RESEtZHSEhYHyEhYX2EhIT1ERIS1kf478LZ9CKr6c8S4W9jVouj3U+zr453x9C+IiQMIkyIkDCIMCFCwiDChAgJgwgTIiQMIkyIkDCIMCFCwiDChAgJgwgTGh7uPkfdLXsWjrjcYD6f7Tz9GISHjbD/CPuPsP8I+4+w/wj7j7D/CPuPsP/+B+E07WBFTZPJ9dmJ9wtiZ5EFKqzj8AAAAABJRU5ErkJggg=="
+                  height={35}
                   alt="MDB Logo"
                   loading="lazy"
                 />
               </a>
 
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul className="navbar-nav me-auto mb-2 mb-lg-0" id='linkSection'>
                 <li className="nav-item">
                   <a href="/" className="navbar-link">Home</a>
                 </li>
@@ -105,7 +105,7 @@ const Navbar = () => {
                   <img
                     src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
                     className="rounded-circle"
-                    height={25}
+                    height={35}
                     alt="Black and White Portrait of a Man"
                     loading="lazy"
                   />

@@ -3,15 +3,10 @@ import './Section3.css'
 import * as React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 const StoryCard = (props) => {
   return (
     <Card sx={{ maxWidth: 400 }} id='section3Card'>
-      {/* <CardMedia
-    sx={{ height: 200, objectFit: 'cover' }} 
-    image={props.imageUrl}
-  /> */}
       <div id='imageSection'>
         <img src={props.imageUrl} width={"100%"} height={"240vh"} />
       </div>
@@ -50,7 +45,7 @@ const Section3 = () => {
 
       <div class="container">
         <div class="text-center">
-          <h2>Our Stories</h2>
+          <h2 id='ourStories'>Our Stories</h2>
         </div>
         <div class="row">
           <div class="col-sm">
