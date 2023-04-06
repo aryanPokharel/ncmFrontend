@@ -14,6 +14,9 @@
   -webkit-text-size-adjust: 100%;
   font-size: 10px;
 }
+*{
+  font-size: large;
+}
 
 a {
   font-weight: 500;
