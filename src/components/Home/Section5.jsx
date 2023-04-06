@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import OwlCarousel from 'react-owl-carousel2';
 import './Section5.css'
 
 const Section5 = () => {

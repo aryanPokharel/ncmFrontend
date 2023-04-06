@@ -47,21 +47,21 @@ const Section6 = () => {
 
     return (
         <section id='section6'>
-            <Accordion className='accordions' expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+            <Accordion id='section6Accordion' className='accordions' expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1bh-content"
                     id="panel1bh-header"
                 >
-                    <Typography sx={{ width: '33%', flexShrink: 0 }}>
+                    <Typography id='texts' sx={{ width: '33%', flexShrink: 0 }}>
                         Manisha K.C.
                     </Typography>
-                    <Typography sx={{ color: 'text.secondary' }}>CEO, MAHABOUDDHA WHOLESALE.</Typography>
+                    <Typography id='texts' sx={{ color: 'text.secondary' }}>CEO, MAHABOUDDHA WHOLESALE.</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        <h2>"Most supportive team!"</h2>
-                        <p>
+                        <h2 id='texts'>"Most supportive team!"</h2>
+                        <p id='texts'>
                             "Being in a e-commerce business for almost 10 years,
                             we were always looking for delivery partner who can deliver all over Nepal.
                             As we started working together with NCM,
@@ -79,13 +79,13 @@ const Section6 = () => {
                     aria-controls="panel2bh-content"
                     id="panel2bh-header"
                 >
-                    <Typography sx={{ width: '33%', flexShrink: 0 }}>John Doe</Typography>
-                    <Typography sx={{ color: 'text.secondary' }}>
+                    <Typography id='texts' sx={{ width: '33%', flexShrink: 0 }}>John Doe</Typography>
+                    <Typography id='texts' sx={{ color: 'text.secondary' }}>
                         Enterpreneur
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography>
+                    <Typography id='texts'>
                         NCM has helped me run my business smoothly for the last 5 years!
                     </Typography>
                 </AccordionDetails>
@@ -96,16 +96,17 @@ const Section6 = () => {
                     aria-controls="panel3bh-content"
                     id="panel3bh-header"
                 >
-                    <Typography sx={{ width: '33%', flexShrink: 0 }}>
+                    <Typography id='texts' sx={{ width: '33%', flexShrink: 0 }}>
                         Ram Bahadur
                     </Typography>
-                    <Typography sx={{ color: 'text.secondary' }}>
+                    <Typography id='texts' sx={{ color: 'text.secondary' }}>
                         Shopping Enthusiast
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography>
-                        As a person who loves shopping, i find NCM very much efficient in moving goods across the country within least possible time frame!
+                    <Typography id='texts'>
+                        As a person who loves shopping, 
+                        i find NCM very much efficient in moving goods across the country within least possible time frame!
                     </Typography>
                 </AccordionDetails>
             </Accordion>
