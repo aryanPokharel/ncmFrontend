@@ -21,6 +21,9 @@
   min-height: 400px;
   max-height: 400px;
 }
+#section3Card:hover{
+  box-shadow: 15px 14px 14px rgba(0, 0, 0, 0.25);
+}
 .cards-section {
     align-items: center;
   }

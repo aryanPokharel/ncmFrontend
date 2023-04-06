@@ -67,6 +67,9 @@ const Section3 = () => {
           </div>
         </div>
       </div>
+      <div id='section3BtnSection'>
+        <Button variant="contained" id='track-btn'>View More</Button>
+      </div> 
     </section>
   )
 }

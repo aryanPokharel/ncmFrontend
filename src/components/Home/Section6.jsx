@@ -13,25 +13,33 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 
 
-const GetInTouch = ()=> {
-  const theme = useTheme();
+const GetInTouch = () => {
+    const theme = useTheme();
 
-  return (
-    <Card sx={{ display: 'flex' }} id='getInTouch'>
-      <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-        <CardContent sx={{ flex: '1 0 auto' }}>
-          <Typography component="div" variant="h5" id='getInTouchHeading'>
-          Would you like to start with us?
-          </Typography>
-          <Typography variant="subtitle1" color="text.secondary" component="div">
-          Please contact us and one of our relationship managers will guide you with our easy onboarding process. Lets us help you meet your goals.
-          </Typography>
-        </CardContent>
-        
-      </Box>
-      <Button variant="contained" id='track-btn'>Get Started</Button>
-    </Card>
-  );
+    return (
+        <div className="container bcontent">
+
+            <hr />
+            <div className="card" style={{ width: "90%" }}>
+                <div className="row no-gutters">
+                    <div className="col-sm-5" id='cardBtnSection'>
+                        <Button variant="contained" id='track-btn'>Get Started</Button>
+                    </div>
+                    <div className="col-sm-7">
+                        <div className="card-body">
+                            <h5 className="card-title">Would you like to start with us?</h5>
+                            <p className="card-text">
+                                Please contact us and one of our relationship managers will guide you with our easy onboarding process. Lets us help you meet your goals.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    );
 }
 
 const Section6 = () => {
@@ -42,7 +50,7 @@ const Section6 = () => {
     };
 
     return (
-        <div id='sectionHolder'>
+        <div id='section6'>
             <Accordion className='accordions' expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
@@ -69,7 +77,7 @@ const Section6 = () => {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion  className='accordions' expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+            <Accordion className='accordions' expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel2bh-content"
@@ -86,7 +94,7 @@ const Section6 = () => {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion  className='accordions' expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+            <Accordion className='accordions' expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel3bh-content"
@@ -106,7 +114,8 @@ const Section6 = () => {
                 </AccordionDetails>
             </Accordion>
             <GetInTouch />
-            
+
+
         </div>
     );
 }
