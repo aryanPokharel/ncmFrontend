@@ -11,7 +11,7 @@ const StoryCard = (props) => {
         <img src={props.imageUrl} width={"100%"} height={"240vh"} />
       </div>
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography id='cardContentheading' gutterBottom variant="h5" component="div">
           {props.title}
         </Typography>
         <Typography variant="body2" color="text.secondary" id="cardContent">

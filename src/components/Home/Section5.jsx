@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import OwlCarousel from 'react-owl-carousel2';
 import './Section5.css'
-// import 'react-owl-carousel2/style.css'; //Allows for server-side rendering.
+
 const Section5 = () => {
   const [index, setIndex] = useState(0);
 
@@ -18,14 +18,10 @@ const Section5 = () => {
     autoplay: true
   };
 
-  // const events = {
-  //     onDragged: function(event) {...},
-  //     onChanged: function(event) {...}
-  // };
   return (
     <section id='section5'>
       <h1>Our Amazing Clients</h1>
-      <h5>Our clients are our advocates. We get most of our business from word-of-mouth referral.</h5>
+      <h5 id='section5Subtitle'>Our clients are our advocates. We get most of our business from word-of-mouth referral.</h5>
       <div class="owl-carousel owl-theme" id='carouselHolder'>
         <div className="item">
 
