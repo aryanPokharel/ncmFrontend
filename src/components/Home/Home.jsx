@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <section>
 
-      <Navbar />
+      {/* <Navbar /> */}
       <Section1 />
       <Section2 />
       <Section3 />
