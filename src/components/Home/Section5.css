@@ -1,4 +1,17 @@
+#section5{
+    width: 100%;
+    align-items: center;
+    padding-inline: 15%;
+}
 #carouselHolder{
-    margin: 50px;
-    max-width: 50%;
+    max-width: 100%;
+    min-width: 100%;
+    align-items: center;
+    justify-content: center;
+  
+}
+.item{
+    max-width: 80%;
+    min-width: 80%;
+    padding-top: 10%;
 }
