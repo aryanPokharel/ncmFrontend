@@ -1,0 +1,16 @@
+#section1{
+    background-image: url("../../assets/images/section1Bg.jpg");
+    height: 800px; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    color: lightgray;
+}
+#section1ContentSection{
+    height: 700px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#contentItem{
+    margin-block: 10%;
+}
