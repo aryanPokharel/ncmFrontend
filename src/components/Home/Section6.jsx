@@ -37,8 +37,6 @@ const GetInTouch = () => {
                 </div>
             </div>
         </div>
-
-
     );
 }
 
