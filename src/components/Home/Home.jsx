@@ -17,21 +17,14 @@ const Home = () => {
 
   return (
     <section>
-
-      {/* <Navbar /> */}
       <Section1 />
       <Section2 />
       <Section3 />
       <Section4 />
       <Section5 />
       <Section6 />
-      <Footer />
-      {/* <Box sx={{ '& > :not(style)': { m: 1 } }}>
-      <Fab color="primary" aria-label="add">
-        <AddIcon />
-      </Fab>
       
-    </Box> */}
+      
     </section>
   )
 }

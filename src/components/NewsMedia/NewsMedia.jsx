@@ -6,4 +6,4 @@ const NewsMedia = () => {
   )
 }
 
-export default News&Media
+export default NewsMedia;

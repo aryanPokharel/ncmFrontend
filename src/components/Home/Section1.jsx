@@ -13,7 +13,6 @@ const Section1 = () => {
   return (
     <div className="row" id='section1'>
       <div className="col-12">
-        <Navbar />
       </div>
       <div className="col-10">
         <div className="container">
