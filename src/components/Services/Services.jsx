@@ -138,7 +138,7 @@ const Services = () => {
             </Card>
             <Card sx={{ minWidth: 275 }}>
               <CardContent>
-                <AccountCircleIcon /> 
+                <AccountCircleIcon />
                 <Typography variant="h5" component="div">
                   be{bull}nev{bull}o{bull}lent
                 </Typography>
