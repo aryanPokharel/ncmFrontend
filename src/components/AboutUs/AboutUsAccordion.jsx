@@ -17,7 +17,7 @@ const AboutUsAccordion = () => {
 
     return (
         <div>
-            <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} style={{color: expanded === 'panel1' ? 'red' : 'black'}}>
+            <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} style={{ color: expanded === 'panel1' ? 'red' : 'black' }}>
                 <AccordionSummary
                     expandIcon={
                         <Badge color="primary">
@@ -43,7 +43,7 @@ const AboutUsAccordion = () => {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}style={{color: expanded === 'panel2' ? 'red' : 'black'}}>
+            <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')} style={{ color: expanded === 'panel2' ? 'red' : 'black' }}>
                 <AccordionSummary
                     expandIcon={
                         <Badge color="primary">
@@ -65,7 +65,7 @@ const AboutUsAccordion = () => {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')} style={{color: expanded === 'panel3' ? 'red' : 'black'}}>
+            <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')} style={{ color: expanded === 'panel3' ? 'red' : 'black' }}>
                 <AccordionSummary
                     expandIcon={
                         <Badge color="primary">
@@ -89,7 +89,7 @@ const AboutUsAccordion = () => {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')} style={{color: expanded === 'panel4' ? 'red' : 'black'}}>
+            <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')} style={{ color: expanded === 'panel4' ? 'red' : 'black' }}>
                 <AccordionSummary
                     expandIcon={
                         <Badge color="primary">
@@ -113,7 +113,7 @@ const AboutUsAccordion = () => {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')} style={{color: expanded === 'panel5' ? 'red' : 'black'}}>
+            <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')} style={{ color: expanded === 'panel5' ? 'red' : 'black' }}>
                 <AccordionSummary
                     expandIcon={
                         <Badge color="primary">
@@ -136,7 +136,7 @@ const AboutUsAccordion = () => {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')} style={{color: expanded === 'panel6' ? 'red' : 'black'}}>
+            <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')} style={{ color: expanded === 'panel6' ? 'red' : 'black' }}>
                 <AccordionSummary
                     expandIcon={
                         <Badge color="primary">
@@ -158,7 +158,7 @@ const AboutUsAccordion = () => {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion expanded={expanded === 'panel7'} onChange={handleChange('panel7')} style={{color: expanded === 'panel7' ? 'red' : 'black'}}>
+            <Accordion expanded={expanded === 'panel7'} onChange={handleChange('panel7')} style={{ color: expanded === 'panel7' ? 'red' : 'black' }}>
                 <AccordionSummary
                     expandIcon={
                         <Badge color="primary">
