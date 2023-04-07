@@ -20,7 +20,7 @@ const Services = () => {
       <div id='serviceSection1'>
           <h1>Services</h1>
           <h2>We provide a wide range of Services</h2>
-          <h3>We are big enough to embrace global practices, small enough to cater to local needs. </h3>
+          <h3>We are big enough to embrace global practices, small enough to cater to local needs.</h3>
       </div>
       <div className="container">
         <h1>How can we help you?</h1>
