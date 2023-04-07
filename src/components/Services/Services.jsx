@@ -17,7 +17,11 @@ import './Services.css'
 const Services = () => {
   return (
     <section id="services">
-
+      <div id='serviceSection1'>
+          <h1>Services</h1>
+          <h2>We provide a wide range of Services</h2>
+          <h3>We are big enough to embrace global practices, small enough to cater to local needs. </h3>
+      </div>
       <div className="container">
         <h1>How can we help you?</h1>
         <p id="servicesContent">Nepal Can Move (NCM) is a national logistic and courier company with largest domestic
@@ -30,7 +34,7 @@ const Services = () => {
             <Card id='serviceCard' >
               <CardContent>
                 <ShoppingCartIcon />
-                <Typography variant="h5" component="div">
+                <Typography variant="h5" component="div" id='serviceHeading'>
                   eCommerce delivery & COD
                 </Typography>
 
@@ -46,7 +50,7 @@ const Services = () => {
             <Card id='serviceCard' >
               <CardContent>
                 <WarehouseIcon />
-                <Typography variant="h5" component="div">
+                <Typography variant="h5" component="div" id='serviceHeading'>
                   Warehousing & inventory
                 </Typography>
 
@@ -62,7 +66,7 @@ const Services = () => {
             <Card id='serviceCard' >
               <CardContent>
                 <DirectionsBoatIcon />
-                <Typography variant="h5" component="div">
+                <Typography variant="h5" component="div" id='serviceHeading'>
                   Export
                 </Typography>
 
@@ -79,7 +83,7 @@ const Services = () => {
             <Card id='serviceCard' >
               <CardContent>
                 <MailLockIcon />
-                <Typography variant="h5" component="div">
+                <Typography variant="h5" component="div" id='serviceHeading'>
                   Express mail & parcels
                 </Typography>
 
@@ -95,7 +99,7 @@ const Services = () => {
             <Card id='serviceCard' >
               <CardContent>
                 <PriceChangeIcon />
-                <Typography variant="h5" component="div">
+                <Typography variant="h5" component="div" id='serviceHeading'>
                   Banking & financial
                 </Typography>
 
@@ -111,7 +115,7 @@ const Services = () => {
             <Card id='serviceCard' >
               <CardContent>
                 <AccountCircleIcon />
-                <Typography variant="h5" component="div">
+                <Typography variant="h5" component="div" id='serviceHeading'>
                   Project services
                 </Typography>
 
