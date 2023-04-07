@@ -27,16 +27,18 @@ const ChooseUs = () => {
             sx={{
                 p: 2,
                 margin: 'auto',
-                maxWidth: 500,
                 flexGrow: 1,
                 backgroundColor: (theme) =>
                     theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
             }}
         >
             <Grid container spacing={2}>
-                <Grid item>
-                    <ButtonBase sx={{ width: 128, height: 128 }}>
-                        <Img alt="complex"
+                <Grid item width={"50%"}>
+                    <ButtonBase sx={{ width: "100%", height: 500 }}>
+                        <Img
+                        height={"100%"}
+                        width={"100%"}
+                            alt="teamWork"
                             src="https://media.istockphoto.com/id/1075972590/vector/hand-united-together-form-lines-triangles-and-particle-style-design-illustration-vector.jpg?s=612x612&w=0&k=20&c=FhGyRn8ThLncMbogiXDRBOd72lLNb-I7gSiKE3gnPNY=" />
                     </ButtonBase>
                 </Grid>
@@ -48,7 +50,11 @@ const ChooseUs = () => {
                         spacing={2}
                     >
                         <Item>Why Choose Us?</Item>
-                        <Item>Everyday, more than 400 staff driven with CAN culture are out there at your service. We believe prosperity comes from logistic, trade and ecommerce infrastructure. We are marching towards CAN VISION™ 2030 and will establish branches in each of 753 municipalities, create 10,000 new jobs and facilitate trade and commerce by connecting 90% people through our massive network. We dream big for the good of country and we have a clear plan.</Item>
+                        <Item>Everyday, more than 400 staff driven with CAN culture are out there at your service.
+                            We believe prosperity comes from logistic, trade and ecommerce infrastructure.
+                            We are marching towards CAN VISION™ 2030 and will establish branches in each of 753 municipalities,
+                            create 10,000 new jobs and facilitate trade and commerce by connecting 90% people through our massive network.
+                            We dream big for the good of country and we have a clear plan.</Item>
 
                         <AboutUsAccordion />
 
