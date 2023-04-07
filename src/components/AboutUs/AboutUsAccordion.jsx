@@ -9,6 +9,7 @@ import './AboutUsAccordion.css'
 
 const AboutUsAccordion = () => {
     const [expanded, setExpanded] = React.useState(false);
+    const [isExpanded, setIsExpanded] = React.useState(false);
 
     const handleChange = (panel) => (event, isExpanded) => {
         setExpanded(isExpanded ? panel : false);
@@ -16,7 +17,7 @@ const AboutUsAccordion = () => {
 
     return (
         <div>
-            <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+            <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} style={{color: expanded === 'panel1' ? 'red' : 'black'}}>
                 <AccordionSummary
                     expandIcon={
                         <Badge color="primary">
@@ -32,7 +33,7 @@ const AboutUsAccordion = () => {
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography  id='accordionText'>
+                    <Typography id='accordionText'>
                         We truly understand the difference of being big as a company and still personally be connected
                         with the vendors. Backed by Australian technology conglomerate “The Can Brand”, Nepal Can Move
                         (NCM) is a national logistic and courier company with largest domestic
@@ -42,7 +43,7 @@ const AboutUsAccordion = () => {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+            <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}style={{color: expanded === 'panel2' ? 'red' : 'black'}}>
                 <AccordionSummary
                     expandIcon={
                         <Badge color="primary">
@@ -64,7 +65,7 @@ const AboutUsAccordion = () => {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
+            <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')} style={{color: expanded === 'panel3' ? 'red' : 'black'}}>
                 <AccordionSummary
                     expandIcon={
                         <Badge color="primary">
@@ -88,7 +89,7 @@ const AboutUsAccordion = () => {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
+            <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')} style={{color: expanded === 'panel4' ? 'red' : 'black'}}>
                 <AccordionSummary
                     expandIcon={
                         <Badge color="primary">
@@ -112,7 +113,7 @@ const AboutUsAccordion = () => {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
+            <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')} style={{color: expanded === 'panel5' ? 'red' : 'black'}}>
                 <AccordionSummary
                     expandIcon={
                         <Badge color="primary">
@@ -135,7 +136,7 @@ const AboutUsAccordion = () => {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
+            <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')} style={{color: expanded === 'panel6' ? 'red' : 'black'}}>
                 <AccordionSummary
                     expandIcon={
                         <Badge color="primary">
@@ -157,7 +158,7 @@ const AboutUsAccordion = () => {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <Accordion expanded={expanded === 'panel7'} onChange={handleChange('panel7')}>
+            <Accordion expanded={expanded === 'panel7'} onChange={handleChange('panel7')} style={{color: expanded === 'panel7' ? 'red' : 'black'}}>
                 <AccordionSummary
                     expandIcon={
                         <Badge color="primary">
@@ -184,3 +185,4 @@ const AboutUsAccordion = () => {
 }
 
 export default AboutUsAccordion
+
