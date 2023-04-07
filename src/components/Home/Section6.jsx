@@ -6,37 +6,6 @@ import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import './Section6.css'
 
-import { useTheme } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
-
-
-const GetInTouch = () => {
-
-    return (
-        <div className="container bcontent" id='getInTouchCard'>
-            <div className="card" style={{ width: "100%" }}>
-                <div className="row no-gutters">
-                    <div className="col-sm-5" id='cardBtnSection'>
-                        <Button variant="contained" id='track-btn'>Get Started</Button>
-                    </div>
-                    <div className="col-sm-7">
-                        <div className="card-body">
-                            <h5 className="card-title">Would you like to start with us?</h5>
-                            <p className="card-text">
-                                Please contact us and one of our relationship managers will guide you with our easy onboarding process.
-                                Lets us help you meet your goals.
-                            </p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    );
-}
 
 const Section6 = () => {
     const [expanded, setExpanded] = React.useState(false);
@@ -110,7 +79,6 @@ const Section6 = () => {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-            <GetInTouch />
         </section>
     );
 }

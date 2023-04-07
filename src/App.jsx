@@ -13,24 +13,26 @@ import Location from './components/Location/Location'
 
 import { BrowserRouter } from 'react-router-dom';
 import { Route, Routes, useNavigate } from "react-router-dom";
+import GetInTouch from './components/GetInTouch/GetInTouch';
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
       <Navbar />
-      <BrowserRouter>      
-      <Routes>
-      <Route path='*' element = {<Home />} />
-      <Route path='/about' element = {<AboutUs />} />
-      <Route path='/services' element = {<Services />} />
-      <Route path='/contact' element = {<Contact />} />
+      <BrowserRouter>
+        <Routes>
+          <Route path='*' element={<Home />} />
+          <Route path='/about' element={<AboutUs />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/contact' element={<Contact />} />
 
-        <Route path='/newsMedia' element = {<NewsMedia />} />
-        <Route path='/locations' element = {<Location />} />
-      </Routes>
-        </BrowserRouter>
-        <Footer />
+          <Route path='/newsMedia' element={<NewsMedia />} />
+          <Route path='/locations' element={<Location />} />
+        </Routes>
+      </BrowserRouter>
+      <GetInTouch />
+      <Footer />
     </div>
   )
 }

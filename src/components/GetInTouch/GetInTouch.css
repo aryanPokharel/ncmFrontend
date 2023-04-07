@@ -1,0 +1,26 @@
+#getInTouch{
+    border-radius: 10px 50px 10px 50px;
+    margin-top: 1%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    max-width: 65%;
+    min-width: 65%;
+    padding: 2%;
+}
+#getInTouchCard{
+    margin-block: 15px;
+    padding: 1rem;
+    border-radius: 8% 92% 9% 91% / 89% 20% 80% 11% ;
+    background-color: rgb(120, 120, 120);
+}
+#getInTouchCardSection{
+    border: 0px;
+    border-radius: 16% 84% 21% 79% / 75% 34% 66% 25% ;
+    background-color: rgb(125, 130, 130);
+}
+#getInTouchCardSection:hover{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#getInTouchHeading{
+    color : red;
+    font-weight: bold;
+}
