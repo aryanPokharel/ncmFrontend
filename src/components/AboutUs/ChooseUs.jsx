@@ -33,11 +33,12 @@ const ChooseUs = () => {
             }}
         >
             <Grid container spacing={2}>
-                <Grid item width={"50%"}>
-                    <ButtonBase sx={{ width: "100%", height: 500 }}>
+                <Grid item>
+                    <ButtonBase sx={{ width: "100%", height: "100%" }}>
                         <Img
                             height={"100%"}
                             width={"100%"}
+                            
                             alt="teamWork"
                             src="https://media.istockphoto.com/id/1075972590/vector/hand-united-together-form-lines-triangles-and-particle-style-design-illustration-vector.jpg?s=612x612&w=0&k=20&c=FhGyRn8ThLncMbogiXDRBOd72lLNb-I7gSiKE3gnPNY=" />
                     </ButtonBase>
@@ -51,9 +52,11 @@ const ChooseUs = () => {
                     >
 
                         <blockquote className="blockquote">
-                            <p className="mb-0">
+
+                            <h1 className="display-2">
                                 Why Choose Us?
-                            </p>
+                            </h1>
+
                         </blockquote>
 
                         <blockquote className="blockquote">
