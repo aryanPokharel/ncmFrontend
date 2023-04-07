@@ -9,7 +9,6 @@ import './AboutUsAccordion.css'
 
 const AboutUsAccordion = () => {
     const [expanded, setExpanded] = React.useState(false);
-    const [isExpanded, setIsExpanded] = React.useState(false);
 
     const handleChange = (panel) => (event, isExpanded) => {
         setExpanded(isExpanded ? panel : false);
