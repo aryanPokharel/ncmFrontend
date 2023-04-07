@@ -171,7 +171,6 @@ const AboutUsAccordion = () => {
                         </Badge>}
                     aria-controls="panel4bh-content"
                     id="panel4bh-header"
-                    className='accordionHeader'
                 >
                     <Typography className='accordionText'
                      sx={{ color: 'text.secondary' }}>
