@@ -65,15 +65,19 @@ const ChooseUs = () => {
                                         aria-controls="panel1bh-content"
                                         id="panel1bh-header"
                                     >
-                                        <Typography sx={{ width: '33%', flexShrink: 0 }}>
-                                            General settings
+
+                                        <Typography sx={{ color: 'text.secondary' }}>
+                                            We are big enough to embrace global practices, small enough to cater local needs
                                         </Typography>
-                                        <Typography sx={{ color: 'text.secondary' }}>I am an accordion</Typography>
                                     </AccordionSummary>
                                     <AccordionDetails>
                                         <Typography>
-                                            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-                                            Aliquam eget maximus est, id dignissim quam.
+                                            We truly understand the difference of being big as a company and still personally be connected
+                                            with the vendors. Backed by Australian technology conglomerate “The Can Brand”, Nepal Can Move
+                                            (NCM) is a national logistic and courier company with largest domestic
+                                            distribution network in the country. We infuse global best practices and innovative technology
+                                            in business operation while letting you to exercise full control and visibility of your packages
+                                            through dedicated Relationship Managers (RMs) and Self-Service Portal (SSP)
                                         </Typography>
                                     </AccordionDetails>
                                 </Accordion>
@@ -83,16 +87,16 @@ const ChooseUs = () => {
                                         aria-controls="panel2bh-content"
                                         id="panel2bh-header"
                                     >
-                                        <Typography sx={{ width: '33%', flexShrink: 0 }}>Users</Typography>
+
                                         <Typography sx={{ color: 'text.secondary' }}>
-                                            You are currently not an owner
+                                            NCM is one stop shop for all your courier & logistic needs
                                         </Typography>
                                     </AccordionSummary>
                                     <AccordionDetails>
                                         <Typography>
-                                            Donec placerat, lectus sed mattis semper, neque lectus feugiat lectus,
-                                            varius pulvinar diam eros in elit. Pellentesque convallis laoreet
-                                            laoreet.
+                                            We offer pick up services right from your door, deliver packages in our own fleet,
+                                            using the fastest route that are available and convenient to your customer,
+                                            collect COD money from customer, and pay it back to you with no fuss.
                                         </Typography>
                                     </AccordionDetails>
                                 </Accordion>
@@ -102,17 +106,17 @@ const ChooseUs = () => {
                                         aria-controls="panel3bh-content"
                                         id="panel3bh-header"
                                     >
-                                        <Typography sx={{ width: '33%', flexShrink: 0 }}>
-                                            Advanced settings
-                                        </Typography>
+
                                         <Typography sx={{ color: 'text.secondary' }}>
-                                            Filtering has been entirely disabled for whole web server
+                                            Largest network of regional offices, branchers and distribution routes
                                         </Typography>
                                     </AccordionSummary>
                                     <AccordionDetails>
                                         <Typography>
-                                            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit
-                                            amet egestas eros, vitae egestas augue. Duis vel est augue.
+                                            We own the largest network of cross-cities delivery services of our own without relying on third party agencies like others.
+                                            We have established over 22,500 cross distribution points through our 155 branches and 11 regional offices.
+                                            By partnering with this largest network in the country, you will not miss on any sales opportunity anywhere in Nepal.
+                                            Be part of something big!
                                         </Typography>
                                     </AccordionDetails>
                                 </Accordion>
@@ -122,15 +126,76 @@ const ChooseUs = () => {
                                         aria-controls="panel4bh-content"
                                         id="panel4bh-header"
                                     >
-                                        <Typography sx={{ width: '33%', flexShrink: 0 }}>Personal data</Typography>
+                                        <Typography sx={{ color: 'text.secondary' }}>
+                                            Experience Fast, Secure & Reliable services like never before!
+                                        </Typography>
                                     </AccordionSummary>
                                     <AccordionDetails>
                                         <Typography>
-                                            Nunc vitae orci ultricies, auctor nunc in, volutpat nisl. Integer sit
-                                            amet egestas eros, vitae egestas augue. Duis vel est augue.
+                                            We provide fastest and most reliable courier services through our largest network of people, fleet and distribution routes.
+                                            Launched in Sep 2021, our Eastern Express™ Services has been most popular with Vendors as fastest delivery route compared to
+                                            any competitors in eastern region where 90% packages reach customer very next day. NCM delivers 80% of total packages within
+                                            24 hours in major towns and cities.
+                                            We are open 365 days a year at your service so that you can sell round the clock.
                                         </Typography>
                                     </AccordionDetails>
                                 </Accordion>
+                                <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
+                                    <AccordionSummary
+                                        expandIcon={<ExpandMoreIcon />}
+                                        aria-controls="panel4bh-content"
+                                        id="panel4bh-header"
+                                    >
+                                        <Typography sx={{ color: 'text.secondary' }}>
+                                            Customer centric operations & culture supported by dedicated account managers
+                                        </Typography>
+                                    </AccordionSummary>
+                                    <AccordionDetails>
+                                        <Typography>
+                                            We handle your packages with care and love. Our riders are our hero who are well
+                                            trained for world class customer service and communication. We aim to attend your queries within two hours.
+                                            Right from CEO to riders,
+                                            everyone has an eagle-eye on your packages until we delivered it.
+                                        </Typography>
+                                    </AccordionDetails>
+                                </Accordion>
+                                <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
+                                    <AccordionSummary
+                                        expandIcon={<ExpandMoreIcon />}
+                                        aria-controls="panel4bh-content"
+                                        id="panel4bh-header"
+                                    >
+                                        <Typography sx={{ color: 'text.secondary' }}>
+                                            Technology company in logistic industry: Building future proof partnership
+                                        </Typography>
+                                    </AccordionSummary>
+                                    <AccordionDetails>
+                                        <Typography>
+                                            Technology is at the front of our business.  We have an in-house team of dedicated developers.
+                                            We have invested heavily in technology from day one to improve our process and system for fast, secure, and reliable services.
+                                            We think outside the box to help our vendors sell more online.
+                                        </Typography>
+                                    </AccordionDetails>
+                                </Accordion>
+                                <Accordion expanded={expanded === 'panel7'} onChange={handleChange('panel7')}>
+                                    <AccordionSummary
+                                        expandIcon={<ExpandMoreIcon />}
+                                        aria-controls="panel4bh-content"
+                                        id="panel4bh-header"
+                                    >
+                                        <Typography sx={{ color: 'text.secondary' }}>
+                                            We ask for your suggestions and feedback regularly, learn & improve!
+                                        </Typography>
+                                    </AccordionSummary>
+                                    <AccordionDetails>
+                                        <Typography>
+                                            We understand things might go wrong and expectation might be faded.
+                                            We have a large team of RMs whose job is to be in touch with you and address your concerns and take feedback.
+                                            You will be assigned with dedicated account managers with their mobile access to address your queries.
+                                        </Typography>
+                                    </AccordionDetails>
+                                </Accordion>
+
                             </div>
                         </Item>
                     </Stack>
