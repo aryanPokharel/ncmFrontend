@@ -5,7 +5,10 @@
     justify-content: center;
     
 }
-.accordionText{
-    font-size: 1.7rem;
+#accordionTitle{
+    font-size: 1.8rem;
+}
+#accordionText{
+    font-size: 1.5rem;
     color : black;
 }

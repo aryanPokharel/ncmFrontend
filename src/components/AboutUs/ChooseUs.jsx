@@ -13,13 +13,6 @@ const Img = styled('img')({
     maxWidth: '100%',
     maxHeight: '100%',
 });
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-}));
 
 const ChooseUs = () => {
     return (
@@ -28,8 +21,7 @@ const ChooseUs = () => {
                 p: 2,
                 margin: 'auto',
                 flexGrow: 1,
-                backgroundColor: (theme) =>
-                    theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+                backgroundColor: "burlywood"
             }}
         >
             <Grid container spacing={2}>
@@ -60,7 +52,7 @@ const ChooseUs = () => {
                         </blockquote>
 
                         <blockquote className="blockquote">
-                            <p className="mb-0">
+                            <p className="mb-0" style={{fontSize:"1.5rem", fontWeight: "bold", color:"white"}}>
                                 Everyday, more than 400 staff driven with CAN culture are out there at your service.
                                 We believe prosperity comes from logistic, trade and ecommerce infrastructure.
                                 We are marching towards CAN VISION™ 2030 and will establish branches in each of 753 municipalities,

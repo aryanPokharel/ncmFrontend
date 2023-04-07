@@ -5,7 +5,10 @@ import './OurTeam.css'
 
 const OurTeam = () => {
     return (
-
+        <div>
+            <h2>
+                Our Team
+            </h2>
         <div className="row row-cols-1 row-cols-md-2 g-4" id='ourTeam'>
             <div className="col">
                 <div className="card" id='teamCard'>
@@ -91,6 +94,7 @@ const OurTeam = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
 
 

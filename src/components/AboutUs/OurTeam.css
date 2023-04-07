@@ -3,7 +3,7 @@
 }
 #teamCard{
     max-width: 60rem;
-    min-width: 60rem;
+    min-width: 20rem;
     border: 0px;
 }
 #teamCard:hover{

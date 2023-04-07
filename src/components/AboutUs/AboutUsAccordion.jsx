@@ -27,13 +27,12 @@ const AboutUsAccordion = () => {
                     className='accordionHeader'
                 >
 
-                    <Typography className='accordionText'
-                    sx={{ color: 'black' }}>
+                    <Typography id='accordionTitle'>
                         We are big enough to embrace global practices, small enough to cater local needs
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography  className='accordionText'>
+                    <Typography  id='accordionText'>
                         We truly understand the difference of being big as a company and still personally be connected
                         with the vendors. Backed by Australian technology conglomerate “The Can Brand”, Nepal Can Move
                         (NCM) is a national logistic and courier company with largest domestic
@@ -53,13 +52,12 @@ const AboutUsAccordion = () => {
                     id="panel2bh-header"
                     className='accordionHeader'
                 >
-                    <Typography className='accordionText' 
-                    sx={{ color: 'text.secondary' }}>
+                    <Typography id='accordionTitle'>
                         NCM is one stop shop for all your courier & logistic needs
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography className='accordionText'>
+                    <Typography id='accordionText'>
                         We offer pick up services right from your door, deliver packages in our own fleet,
                         using the fastest route that are available and convenient to your customer,
                         collect COD money from customer, and pay it back to you with no fuss.
@@ -77,13 +75,12 @@ const AboutUsAccordion = () => {
                     className='accordionHeader'
                 >
 
-                    <Typography className='accordionText'
-                     sx={{ color: 'text.secondary' }}>
+                    <Typography id='accordionTitle'>
                         Largest network of regional offices, branchers and distribution routes
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography className='accordionText'>
+                    <Typography id='accordionText'>
                         We own the largest network of cross-cities delivery services of our own without relying on third party agencies like others.
                         We have established over 22,500 cross distribution points through our 155 branches and 11 regional offices.
                         By partnering with this largest network in the country, you will not miss on any sales opportunity anywhere in Nepal.
@@ -101,13 +98,12 @@ const AboutUsAccordion = () => {
                     id="panel4bh-header"
                     className='accordionHeader'
                 >
-                    <Typography className='accordionText' 
-                    sx={{ color: 'text.secondary' }}>
+                    <Typography id='accordionTitle'>
                         Experience Fast, Secure & Reliable services like never before!
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography className='accordionText'>
+                    <Typography id='accordionText'>
                         We provide fastest and most reliable courier services through our largest network of people, fleet and distribution routes.
                         Launched in Sep 2021, our Eastern Express™ Services has been most popular with Vendors as fastest delivery route compared to
                         any competitors in eastern region where 90% packages reach customer very next day. NCM delivers 80% of total packages within
@@ -126,13 +122,12 @@ const AboutUsAccordion = () => {
                     id="panel4bh-header"
                     className='accordionHeader'
                 >
-                    <Typography className='accordionText'
-                     sx={{ color: 'text.secondary' }}>
+                    <Typography id='accordionTitle'>
                         Customer centric operations & culture supported by dedicated account managers
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography className='accordionText'>
+                    <Typography id='accordionText'>
                         We handle your packages with care and love. Our riders are our hero who are well
                         trained for world class customer service and communication. We aim to attend your queries within two hours.
                         Right from CEO to riders,
@@ -150,13 +145,12 @@ const AboutUsAccordion = () => {
                     id="panel4bh-header"
                     className='accordionHeader'
                 >
-                    <Typography className='accordionText'
-                     sx={{ color: 'text.secondary' }}>
+                    <Typography id='accordionTitle'>
                         Technology company in logistic industry: Building future proof partnership
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography className='accordionText'>
+                    <Typography id='accordionText'>
                         Technology is at the front of our business.  We have an in-house team of dedicated developers.
                         We have invested heavily in technology from day one to improve our process and system for fast, secure, and reliable services.
                         We think outside the box to help our vendors sell more online.
@@ -172,13 +166,12 @@ const AboutUsAccordion = () => {
                     aria-controls="panel4bh-content"
                     id="panel4bh-header"
                 >
-                    <Typography className='accordionText'
-                     sx={{ color: 'text.secondary' }}>
+                    <Typography id='accordionTitle'>
                         We ask for your suggestions and feedback regularly, learn & improve!
                     </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
-                    <Typography className='accordionText'>
+                    <Typography id='accordionText'>
                         We understand things might go wrong and expectation might be faded.
                         We have a large team of RMs whose job is to be in touch with you and address your concerns and take feedback.
                         You will be assigned with dedicated account managers with their mobile access to address your queries.
