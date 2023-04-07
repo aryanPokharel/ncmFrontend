@@ -1,0 +1,11 @@
+.accordionHeader{
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.accordionText{
+    font-size: 1.7rem;
+    color : black;
+}
