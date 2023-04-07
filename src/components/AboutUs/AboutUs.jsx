@@ -1,6 +1,7 @@
 import './AboutUs.css'
 import CardDeck from './CardDeck';
 import ChooseUs from './ChooseUs';
+import OurTeam from './OurTeam';
 
 
 const AboutUs = () => {
@@ -53,6 +54,7 @@ const AboutUs = () => {
         </div>
         <CardDeck />
         <ChooseUs />
+        <OurTeam />
         </section>
 
     )

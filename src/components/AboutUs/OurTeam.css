@@ -1,0 +1,19 @@
+#ourTeam{
+    padding: 5rem;
+}
+#teamCard{
+    max-width: 60rem;
+    min-width: 60rem;
+    border: 0px;
+}
+#teamCard:hover{
+    background-color: lightgray;
+    border-radius: 45% 55% 21% 79% / 52% 39% 61% 48% ;
+    transition: all 0.3s ease-in-out;
+}
+
+#cardTitleSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
