@@ -9,14 +9,6 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(2),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-}));
-
 const cardData = [
     {
         index : 0,
@@ -74,33 +66,6 @@ const ReturnCardInfo = (info) => {
                 <Button size="small">Learn More</Button>
             </CardActions>
         </Card>
-        // (cardIndex = 0) ?
-        // {
-        //     title: "Discover",
-        //     content: "Business is all about solving problems. We start with discovering the logistics problems and pain-points."
-        // } :
-        //     (cardIndex = 1) ?
-        // {
-        //     title: "Define",
-        //     content: "We define what would be the optimal solution to the problems that want solutions for."
-        // } :
-        //         (cardIndex = 2) ?
-        // {
-        //     title: "Design",
-        //     content: "We carefully design the systems that would achieve the defined solution to the problems."
-        // } :
-        // (cardIndex = 3) ? {
-        //     title: "Develop",
-        //     content: "We develop the designed systems. We use latest technology to develop the systems and solutions."
-        // } :
-        //                 (cardIndex = 4) ? {
-        //                     title: "Deploy",
-        //                     content: "We deploy the developed solution. We test, improve, deploy and repeat until the defined standards are acheived."
-        //                 } :
-        // {
-        //     title: "Deliver",
-        //     content: "We deliver solution to the client and continue the 6-D process on a periodic ongoing basis."
-        // }
     )
 }
 
@@ -110,7 +75,7 @@ const CardDeck = () => {
             <Grid container spacing={2} >
                 {Array.from(Array(6)).map((_, index) => (
                     <Grid item xs={2} sm={4} md={4} key={index}>
-                        <Item><ReturnCardInfo cardNumber={index} /></Item>
+                        <ReturnCardInfo cardNumber={index} />
                     </Grid>
                 ))}
             </Grid>
