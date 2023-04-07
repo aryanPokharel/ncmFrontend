@@ -1,10 +1,7 @@
 import * as React from 'react';
 import Stack from '@mui/material/Stack';
-import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 import DirectionsBoatIcon from '@mui/icons-material/DirectionsBoat';
@@ -15,15 +12,6 @@ import PriceChangeIcon from '@mui/icons-material/PriceChange';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 import './Services.css'
-
-const bull = (
-  <Box
-    component="span"
-    sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-  >
-    •
-  </Box>
-);
 
 
 const Services = () => {
@@ -39,121 +27,102 @@ const Services = () => {
 
         <Stack direction="column" spacing={2}>
           <Stack direction="row" spacing={2}>
-            <Card sx={{ minWidth: 275 }}>
+            <Card id='serviceCard' >
               <CardContent>
                 <ShoppingCartIcon />
                 <Typography variant="h5" component="div">
-                  be{bull}nev{bull}o{bull}lent
+                  eCommerce delivery & COD
                 </Typography>
-                <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                  adjective
-                </Typography>
+
                 <Typography variant="body2">
-                  well meaning and kindly.
+                  We provide ecommerce pickup from your office or home and delivery to your customer's
+                  home with COD collection services all over Nepal. Sell more online with us.
                   <br />
-                  {'"a benevolent smile"'}
+
                 </Typography>
               </CardContent>
-              <CardActions>
-                <Button size="small">Learn More</Button>
-              </CardActions>
+
             </Card>
-            <Card sx={{ minWidth: 275 }}>
+            <Card id='serviceCard' >
               <CardContent>
                 <WarehouseIcon />
                 <Typography variant="h5" component="div">
-                  be{bull}nev{bull}o{bull}lent
+                  Warehousing & inventory
                 </Typography>
-                <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                  adjective
-                </Typography>
+
                 <Typography variant="body2">
-                  well meaning and kindly.
+                  We provide warehousing and inventory services at key locations. We can receive your inventory,
+                  manage it and fulfill your orders so that you can focus on selling more.
                   <br />
-                  {'"a benevolent smile"'}
+
                 </Typography>
               </CardContent>
-              <CardActions>
-                <Button size="small">Learn More</Button>
-              </CardActions>
+
             </Card>
-            <Card sx={{ minWidth: 275 }}>
+            <Card id='serviceCard' >
               <CardContent>
                 <DirectionsBoatIcon />
                 <Typography variant="h5" component="div">
-                  be{bull}nev{bull}o{bull}lent
+                  Export
                 </Typography>
-                <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                  adjective
-                </Typography>
+
                 <Typography variant="body2">
-                  well meaning and kindly.
+                  We can export items to most countries from Nepal, including Australia, China, Europe, India US, UK, UAE at most affordable rates.
                   <br />
-                  {'"a benevolent smile"'}
+
                 </Typography>
               </CardContent>
-              <CardActions>
-                <Button size="small">Learn More</Button>
-              </CardActions>
+
             </Card>
           </Stack>
           <Stack direction="row" spacing={2}>
-            <Card sx={{ minWidth: 275 }}>
+            <Card id='serviceCard' >
               <CardContent>
                 <MailLockIcon />
                 <Typography variant="h5" component="div">
-                  be{bull}nev{bull}o{bull}lent
+                  Express mail & parcels
                 </Typography>
-                <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                  adjective
-                </Typography>
+
                 <Typography variant="body2">
-                  well meaning and kindly.
+                  We provide corporate express mail & parcel services, which includes prepaid satchels,
+                  boxes that are fully trackable and delivered with proof of delivery.
                   <br />
-                  {'"a benevolent smile"'}
+
                 </Typography>
               </CardContent>
-              <CardActions>
-                <Button size="small">Learn More</Button>
-              </CardActions>
+
             </Card>
-            <Card sx={{ minWidth: 275 }}>
+            <Card id='serviceCard' >
               <CardContent>
                 <PriceChangeIcon />
                 <Typography variant="h5" component="div">
-                  be{bull}nev{bull}o{bull}lent
+                  Banking & financial
                 </Typography>
-                <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                  adjective
-                </Typography>
+
                 <Typography variant="body2">
-                  well meaning and kindly.
+                  We provide agency services for home banking, account opening, cards delivery,
+                  deposit collections and remittance services all over Nepal.
                   <br />
-                  {'"a benevolent smile"'}
+
                 </Typography>
               </CardContent>
-              <CardActions>
-                <Button size="small">Learn More</Button>
-              </CardActions>
+
             </Card>
-            <Card sx={{ minWidth: 275 }}>
+            <Card id='serviceCard' >
               <CardContent>
                 <AccountCircleIcon />
                 <Typography variant="h5" component="div">
-                  be{bull}nev{bull}o{bull}lent
+                  Project services
                 </Typography>
-                <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                  adjective
-                </Typography>
+
                 <Typography variant="body2">
-                  well meaning and kindly.
+                  We provide aid delivery & project logistics management services to government and NGOs,
+                  INGOs, all over Nepal. We need your project needs.
                   <br />
-                  {'"a benevolent smile"'}
+
                 </Typography>
               </CardContent>
-              <CardActions>
-                <Button size="small">Learn More</Button>
-              </CardActions>
+
             </Card>
           </Stack>
 
