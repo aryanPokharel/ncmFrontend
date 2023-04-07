@@ -1,4 +1,4 @@
-.card-deck {
+#cardDeck{
     display: flex;
     gap: 10px;
 }

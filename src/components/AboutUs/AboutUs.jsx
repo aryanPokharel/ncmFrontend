@@ -7,7 +7,7 @@ import OurTeam from './OurTeam';
 const AboutUs = () => {
     return (
         <section>
-            <div class="card-deck">
+            <div class="card-deck" id='cardDeck'>
             <div class="card">
                 
                 <div class="card-body">
