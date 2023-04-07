@@ -4,6 +4,7 @@ import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
+import './CardDeck.css'
 
 const cardData = [
     {
@@ -42,17 +43,17 @@ const ReturnCardInfo = (info) => {
     return (
         <Card sx={{ minWidth: 275 }}>
             
-            <CardContent>
-                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+            <CardContent  id='card'>
+                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom >
                     {info.cardNumber+1}
                 </Typography>
-                <Typography variant="h5" component="div">
+                <Typography variant="h5" component="div"  id='card'>
                 {cardData[info.cardNumber].title}
                 </Typography>
                 <Typography sx={{ mb: 1.5 }} color="text.secondary">
                     
                 </Typography>
-                <Typography variant="body2">
+                <Typography variant="body2"  id='card'>
                 {cardData[info.cardNumber].content}
                     <br />
                     
