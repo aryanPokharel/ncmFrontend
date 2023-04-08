@@ -58,7 +58,8 @@
   }
   
   .flip-box-back {
-    color: black;
+    background-color: dodgerblue;
+    color: white;
     transform: rotateX(180deg);
   }
 
