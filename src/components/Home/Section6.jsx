@@ -16,7 +16,30 @@ const Section6 = () => {
 
     return (
         <section id='section6'>
-            <Accordion id='section6Accordion' className='accordions' expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+            <div className="flip-box">
+                <div className="flip-box-inner">
+                    <div className="flip-box-front">
+                        <Typography id='texts' sx={{ width: '33%', flexShrink: 0 }}>
+                            Manisha K.C.
+                        </Typography>
+                        <Typography id='texts' sx={{ color: 'text.secondary' }}>CEO, MAHABOUDDHA WHOLESALE.</Typography>
+                    </div>
+                    <div className="flip-box-back">
+                        <h2 id="texts">"Most supportive team!"</h2>
+                        <p id="texts">
+                            "Being in a e-commerce business for almost 10 years, we were always
+                            looking for delivery partner who can deliver all over Nepal. As we
+                            started working together with NCM, we can almost deliver all over Nepal
+                            with cash on delivery service at very best rate. Nepal Can Move with the
+                            most supportive team they took online business to the next level. We
+                            wish Nepal Can Move reach to the next level and make online shopping
+                            more easy and more affordable."
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            {/* <Accordion id='section6Accordion' className='accordions' expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="panel1bh-content"
@@ -78,7 +101,7 @@ const Section6 = () => {
                         i find NCM very much efficient in moving goods across the country within least possible time frame!
                     </Typography>
                 </AccordionDetails>
-            </Accordion>
+            </Accordion> */}
         </section>
     );
 }

@@ -1,5 +1,4 @@
-
-  .navbar {
+/* .navbar {
     top: 0;
     left: 0;
     right: 0;
@@ -31,9 +30,9 @@
   }
   #track-btn {
     background-color : red
-  }
+  } */
 
-  /* *{
+/* *{
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -131,4 +130,33 @@
     background-size: cover;
     height: calc(100vh - 80px);
   } */
+
+/* From here starts my own navbar */
+a{
+  text-decoration: none;
+}
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 2rem;
+  position: -webkit-sticky; /* Safari */
+  position: fixed;
+  width: 100%;
+}
+.navbarSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   
+}
+#navbarSection2 {
+  width: 80rem;
+}
+.navbarItem{
+  color: white;
+}
+.navbarItem:hover{
+  box-shadow: 15px 14px 14px rgba(184, 14, 14, 0.25);
+}
