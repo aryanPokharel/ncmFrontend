@@ -5,42 +5,63 @@ import Button from '@mui/material/Button';
 const Navbar = () => {
 
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleLogin = () => {
+    setIsLoggedIn(true);
+  }
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+  }
+
   return (
     <nav>
       <input type="checkbox" id="check" />
       <label htmlFor="check" className="checkbtn">
         <i className="fas fa-bars" />
       </label>
-      <label className="logo">DesignX</label>
+      <label className="logo">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEXdHj/////cK0fcJkPdHT3bMU/dFDnhXXPhaXzcAC/aMErcADPcADHcCDXsrrnonqXvusLdQVfmj5jqo6/pnqr11dnzys7dUmf03N7kg4znpavcQlvrqLTu0tXvzdLtwsnjcoPbACLbACjbACHhd4bvusPjk56mka92AAACCElEQVR4nO3c23ISURBAURQykQQ1MSqo5Krx/z9RX3iwCk+PBLo5uPYH9MyqqXk6l8nryWk3nRD2HmH/EfYfYf8R9h9h/xH2H2H/EfYfYf8Rtpot5lGLYY/vulsvEA7L1aeo1Zdy4kuE56/i3l/u8213ibARIWFShI0ICZMibERImBRhI0LCpAgbERImRdiIkDApwkaEhEkRNiIkTOrgwvksp2GY1Qi/nl0n9e1iO/HQwsTWi1MX3mz/5U9J6BsSEpZHSEhYHyEhYX2EhIT1ERIS1kdISFgfISFhfYSEhPWta4S363dhdyPm3MdjHrYfjD/4XozHRdTjhxFzzp/COX85+X8E+2nejhG+2fnmAsJGhISbCAmDCBsREm4iJAwibERIuImQMIiwESHhJkLCIMJGhISbCAmDCBv1LhzCG+WflmOE38M5o9aA9y8cflw9XwWNWX9fxWOeb0uElzcjHpvYAYQfq01/RkhIWB8hIWF9hISE9RESEtZHSEhYHyEhYX2EhIT1ERIS1kf478LZ9CKr6c8S4W9jVouj3U+zr453x9C+IiQMIkyIkDCIMCFCwiDChAgJgwgTIiQMIkyIkDCIMCFCwiDChAgJgwgTGh7uPkfdLXsWjrjcYD6f7Tz9GISHjbD/CPuPsP8I+4+w/wj7j7D/CPuPsP/+B+E07WBFTZPJ9dmJ9wtiZ5EFKqzj8AAAAABJRU5ErkJggg=="
+          height={35}
+          alt="MDB Logo"
+          loading="lazy"
+        />
+        NCM
+      </label>
       <ul>
         <li>
-          <a className="active" href="#">
+          <a href="/">
             Home
           </a>
         </li>
         <li>
-          <a href="#">About</a>
+          <a href="/about">About</a>
         </li>
         <li>
-          <a href="#">Services</a>
+          <a href="/services">Services</a>
         </li>
         <li>
-          <a href="#">Contact</a>
+          <a href="/contact">Contact</a>
         </li>
         <li>
-          <a href="#">News&Media</a>
+          <a href="/newsMedia">News&Media</a>
         </li>
         <li>
-          <a href="#">Location</a>
+          <a href="/location">Location</a>
         </li>
         <li>
-          <a href="#">Jobs</a>
+          <a href="/jobs">Jobs</a>
         </li>
         <li>
-          <a href="#">Login</a>
+          {
+            isLoggedIn ?
+              <Button variant="contained" className='navbarBtn' id='logoutBtn' onClick={handleLogout}>Logout</Button>
+              : 
+              <Button variant="contained" className='navbarBtn' id='loginBtn' onClick={handleLogin}>Login</Button>
+          }
         </li>
         <li>
-          <a href="#">Track</a>
+          <Button variant="contained" className='navbarBtn' id='trackBtn'>Track</Button>
         </li>
       </ul>
     </nav>
@@ -63,12 +84,12 @@ const Navbar = () => {
     //     <div className="collapse navbar-collapse" id="navbarSupportedContent">
 
     // <a className="navbar-brand mt-2 mt-lg-0" href="#">
-    //   <img
-    //     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEXdHj/////cK0fcJkPdHT3bMU/dFDnhXXPhaXzcAC/aMErcADPcADHcCDXsrrnonqXvusLdQVfmj5jqo6/pnqr11dnzys7dUmf03N7kg4znpavcQlvrqLTu0tXvzdLtwsnjcoPbACLbACjbACHhd4bvusPjk56mka92AAACCElEQVR4nO3c23ISURBAURQykQQ1MSqo5Krx/z9RX3iwCk+PBLo5uPYH9MyqqXk6l8nryWk3nRD2HmH/EfYfYf8R9h9h/xH2H2H/EfYfYf8Rtpot5lGLYY/vulsvEA7L1aeo1Zdy4kuE56/i3l/u8213ibARIWFShI0ICZMibERImBRhI0LCpAgbERImRdiIkDApwkaEhEkRNiIkTOrgwvksp2GY1Qi/nl0n9e1iO/HQwsTWi1MX3mz/5U9J6BsSEpZHSEhYHyEhYX2EhIT1ERIS1kdISFgfISFhfYSEhPWta4S363dhdyPm3MdjHrYfjD/4XozHRdTjhxFzzp/COX85+X8E+2nejhG+2fnmAsJGhISbCAmDCBsREm4iJAwibERIuImQMIiwESHhJkLCIMJGhISbCAmDCBv1LhzCG+WflmOE38M5o9aA9y8cflw9XwWNWX9fxWOeb0uElzcjHpvYAYQfq01/RkhIWB8hIWF9hISE9RESEtZHSEhYHyEhYX2EhIT1ERIS1kf478LZ9CKr6c8S4W9jVouj3U+zr453x9C+IiQMIkyIkDCIMCFCwiDChAgJgwgTIiQMIkyIkDCIMCFCwiDChAgJgwgTGh7uPkfdLXsWjrjcYD6f7Tz9GISHjbD/CPuPsP8I+4+w/wj7j7D/CPuPsP/+B+E07WBFTZPJ9dmJ9wtiZ5EFKqzj8AAAAABJRU5ErkJggg=="
-    //     height={35}
-    //     alt="MDB Logo"
-    //     loading="lazy"
-    //   />
+    // <img
+    //   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEXdHj/////cK0fcJkPdHT3bMU/dFDnhXXPhaXzcAC/aMErcADPcADHcCDXsrrnonqXvusLdQVfmj5jqo6/pnqr11dnzys7dUmf03N7kg4znpavcQlvrqLTu0tXvzdLtwsnjcoPbACLbACjbACHhd4bvusPjk56mka92AAACCElEQVR4nO3c23ISURBAURQykQQ1MSqo5Krx/z9RX3iwCk+PBLo5uPYH9MyqqXk6l8nryWk3nRD2HmH/EfYfYf8R9h9h/xH2H2H/EfYfYf8Rtpot5lGLYY/vulsvEA7L1aeo1Zdy4kuE56/i3l/u8213ibARIWFShI0ICZMibERImBRhI0LCpAgbERImRdiIkDApwkaEhEkRNiIkTOrgwvksp2GY1Qi/nl0n9e1iO/HQwsTWi1MX3mz/5U9J6BsSEpZHSEhYHyEhYX2EhIT1ERIS1kdISFgfISFhfYSEhPWta4S363dhdyPm3MdjHrYfjD/4XozHRdTjhxFzzp/COX85+X8E+2nejhG+2fnmAsJGhISbCAmDCBsREm4iJAwibERIuImQMIiwESHhJkLCIMJGhISbCAmDCBv1LhzCG+WflmOE38M5o9aA9y8cflw9XwWNWX9fxWOeb0uElzcjHpvYAYQfq01/RkhIWB8hIWF9hISE9RESEtZHSEhYHyEhYX2EhIT1ERIS1kf478LZ9CKr6c8S4W9jVouj3U+zr453x9C+IiQMIkyIkDCIMCFCwiDChAgJgwgTIiQMIkyIkDCIMCFCwiDChAgJgwgTGh7uPkfdLXsWjrjcYD6f7Tz9GISHjbD/CPuPsP8I+4+w/wj7j7D/CPuPsP/+B+E07WBFTZPJ9dmJ9wtiZ5EFKqzj8AAAAABJRU5ErkJggg=="
+    //   height={35}
+    //   alt="MDB Logo"
+    //   loading="lazy"
+    // />
     // </a>
 
     //       <ul className="navbar-nav me-auto mb-2 mb-lg-0" id='linkSection'>
