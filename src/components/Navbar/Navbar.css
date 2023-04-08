@@ -30,9 +30,9 @@
   }
   #track-btn {
     background-color : red
-  } */
+  } */ 
 
-/* *{
+ *{
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -129,10 +129,10 @@
     background: url(bg1.jpg) no-repeat;
     background-size: cover;
     height: calc(100vh - 80px);
-  } */
+  }
 
 /* From here starts my own navbar */
-a{
+/* a{
   text-decoration: none;
 }
 #navbar {
@@ -141,9 +141,9 @@ a{
   justify-content: space-between;
   align-items: center;
   padding-inline: 2rem;
-  position: -webkit-sticky; /* Safari */
-  position: fixed;
+  position: absolute;
   width: 100%;
+  background-color: red;
 }
 .navbarSection {
   display: flex;
@@ -158,5 +158,20 @@ a{
   color: white;
 }
 .navbarItem:hover{
-  box-shadow: 15px 14px 14px rgba(184, 14, 14, 0.25);
+  color: red;
 }
+#hamburger-btn {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  #navbarSection2 {
+    display: none;
+  }
+  #hamburger-btn {
+    display:initial;
+    background-color: white;
+  }
+  #brandLink{
+    display: none;
+  }
+} */

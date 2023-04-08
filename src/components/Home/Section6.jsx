@@ -24,7 +24,7 @@ const Section6 = () => {
                         </Typography>
                         <Typography id='texts' sx={{ color: 'text.secondary' }}>CEO, MAHABOUDDHA WHOLESALE.</Typography>
                     </div>
-                    <div className="flip-box-back">
+                    <div className="flip-box-back" id='flipBack'>
                         <h2 id="texts">"Most supportive team!"</h2>
                         <p id="texts">
                             "Being in a e-commerce business for almost 10 years, we were always
