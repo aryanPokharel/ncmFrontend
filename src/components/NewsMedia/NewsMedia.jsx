@@ -40,7 +40,7 @@ const NewsMedia = () => {
       tags: "NCM, Nepal Can Move"
     },
   ]);
-  const numberOfBlogs = blogData.length;
+
   return (
     <section id='newsMedia'>
       <div id='newsMediaChild1'>
