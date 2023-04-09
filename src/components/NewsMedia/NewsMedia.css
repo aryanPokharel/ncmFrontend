@@ -1,7 +1,7 @@
 
 #newsMedia{
     background-color: red;
-    width:100%;
+    width:190rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,5 +14,5 @@
     justify-content: space-between;
     align-items: center;
     height: inherit;
-    width: 80rem;
+    width: 140rem;
 }
