@@ -14,6 +14,8 @@ import Location from './components/Location/Location'
 import { BrowserRouter } from 'react-router-dom';
 import { Route, Routes, useNavigate } from "react-router-dom";
 import GetInTouch from './components/GetInTouch/GetInTouch';
+
+
 function App() {
   const [count, setCount] = useState(0)
 
