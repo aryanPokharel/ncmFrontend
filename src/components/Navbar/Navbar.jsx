@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import Button from '@mui/material/Button';
 
 const Navbar = () => {
 
@@ -15,9 +14,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-
       <div className="container-fluid">
-
         <button
           className="navbar-toggler"
           type="button"
