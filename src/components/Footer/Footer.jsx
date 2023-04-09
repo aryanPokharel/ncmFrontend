@@ -3,7 +3,7 @@ import './Footer.css'
 
 function Footer() {
   return (
-    <footer className="text-center text-lg-start bg-dark text-light">
+    <footer className="text-center pt-1 text-lg-start bg-dark text-light" id='footer'>
 
       <div className="container text-center text-md-start">
 
