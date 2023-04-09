@@ -1,14 +1,9 @@
-#section5{
-    width: 100%;
-    align-items: center;
-    padding-inline: 15%;
-}
+
 #carouselHolder{
     max-width: 100%;
     min-width: 100%;
     align-items: center;
-    justify-content: center;
-  
+    justify-content: center; 
 }
 .item{
     max-width: 80%;
@@ -16,5 +11,8 @@
     padding-top: 10%;
 }
 #section5Subtitle{
+    font-size: 1.7rem;
+}
+.section5Item{
     font-size: 1.7rem;
 }

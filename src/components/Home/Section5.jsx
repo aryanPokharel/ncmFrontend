@@ -1,15 +1,25 @@
-import React, { useState } from 'react';
-import Carousel from 'react-bootstrap/Carousel';
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Stack from '@mui/material/Stack';
+import { styled } from '@mui/material/styles';
+import { useState } from 'react'
+
 import './Section5.css'
 
+const Item = styled(Paper)(({ theme }) => ({
+  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: 'center',
+  color: theme.palette.text.secondary,
+}));
 const Section5 = () => {
   const [index, setIndex] = useState(0);
 
   const handleSelect = (selectedIndex, e) => {
     setIndex(selectedIndex);
   };
-
-  // 
   const options = {
     items: 1,
     nav: true,
@@ -18,10 +28,17 @@ const Section5 = () => {
   };
 
   return (
-    <section id='section5'>
-      <h1>Our Amazing Clients</h1>
-      <h5 id='section5Subtitle'>Our clients are our advocates. We get most of our business from word-of-mouth referral.</h5>
-      <div class="owl-carousel owl-theme" id='carouselHolder'>
+    <Box sx={{ width: '100%' }}>
+      <Stack spacing={2}>
+        <h2 className='section5Item'>
+        Our Amazing Clients
+        </h2>
+        <h2 className='section5Item'>
+        Our clients are our advocates. We get most of our business from word-of-mouth referral.
+        </h2>
+        <Item>
+        <Stack direction="row" spacing={2} justifyContent="center" alignItems="center"> 
+        <div class="owl-carousel owl-theme" id='carouselHolder'>
         <div className="item">
 
           <img alt="Kinumna"
@@ -79,7 +96,10 @@ const Section5 = () => {
 
         </div>
       </div>
-    </section>
+      </Stack>
+        </Item>
+      </Stack>
+    </Box>
   )
 }
 
