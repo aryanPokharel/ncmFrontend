@@ -19,10 +19,14 @@ const Section6 = () => {
             <div className="flip-box">
                 <div className="flip-box-inner">
                     <div className="flip-box-front">
-                        <Typography id='texts' sx={{ width: '33%', flexShrink: 0 }}>
-                            Manisha K.C.
-                        </Typography>
-                        <Typography id='texts' sx={{ color: 'text.secondary' }}>CEO, MAHABOUDDHA WHOLESALE.</Typography>
+                        <div id='frontSide'>
+                            <Typography id='texts' sx={{ width: '33%', flexShrink: 0 }}>
+                                Manisha K.C.
+                            </Typography>
+                            <Typography id='texts' sx={{ color: 'text.secondary' }}>
+                                CEO, MAHABOUDDHA WHOLESALE
+                            </Typography>
+                        </div>
                     </div>
                     <div className="flip-box-back" id='flipBack'>
                         <h2 id="texts">"Most supportive team!"</h2>
