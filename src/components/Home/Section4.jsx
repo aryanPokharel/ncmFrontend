@@ -23,9 +23,9 @@ const Section4 = () => {
   
   // useEffect(() => {
 
-  //   while (employeeState <= 600) {
-  //     setEmployeeState(employeeState++)
-  //   }
+    // while (employeeState <= 600) {
+    //   setEmployeeState(employeeState++)
+    // }
 
   //   while (branchState < 600) {
   //     branchState++
