@@ -8,6 +8,7 @@ import TableHead from '@mui/material/TableHead';
 import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
 
+import './Location.css'
 
 const columns = [
   { id: 'name', label: 'Name', minWidth: 170 },
@@ -77,7 +78,7 @@ const Location = () => {
         <h1>
           Here are our branches
         </h1>
-        <Paper sx={{ width: '100%', overflow: 'hidden' }}>
+        <Paper sx={{ width: '100%', overflow: 'hidden' }} id='table'>
           <TableContainer sx={{ maxHeight: 440 }}>
             <Table stickyHeader aria-label="sticky table">
               <TableHead>
