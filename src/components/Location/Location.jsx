@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState, useEffect } from 'react'
 import Paper from '@mui/material/Paper';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -7,8 +7,7 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TablePagination from '@mui/material/TablePagination';
 import TableRow from '@mui/material/TableRow';
-import { read, utils, writeFile } from 'xlsx';
-// import data from "../../../public/data/my-data.xLsx"
+
 
 const columns = [
   { id: 'name', label: 'Name', minWidth: 170 },
@@ -58,6 +57,8 @@ const rows = [
   createData('Nigeria', 'NG', 200962417, 923768),
   createData('Brazil', 'BR', 210147125, 8515767),
 ];
+
+
 const Location = () => {
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(10);
@@ -70,58 +71,12 @@ const Location = () => {
     setRowsPerPage(+event.target.value);
     setPage(0);
   };
-
-  // excel import
-  const handleImport = ($event) => {
-    const files = $event.target.files;
-    if (files.length) {
-      const file = files[0];
-      const reader = new FileReader();
-      reader.onload = (event) => {
-        const wb = read(event.target.result);
-        const sheets = wb.SheetNames;
-
-        if (sheets.length) {
-          const rows = utils.sheet_to_json(wb.Sheets[sheets[0]]);
-          setMovies(rows)
-        }
-      }
-      reader.readAsArrayBuffer(file);
-    }
-  }
-
-  const handleExport = () => {
-    const headings = [[
-      'Movie',
-      'Category',
-      'Director',
-      'Rating'
-    ]];
-    const wb = utils.book_new();
-    const ws = utils.json_to_sheet([]);
-    utils.sheet_add_aoa(ws, headings);
-    utils.sheet_add_json(ws, movies, { origin: 'A2', skipHeader: true });
-    utils.book_append_sheet(wb, ws, 'Report');
-    writeFile(wb, 'Movie Report.xlsx');
-  }
-
-  async function getData() {
-    const response = await fetch('../../../public/data/my-data.xLsx', {
-      headers: {
-        'Content-Type': 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
-      }
-    });
-    const data = await response.arrayBuffer();
-    console.log(data)
-    return data;
-  }
-  console.log('data', getData())
-  
   return (
     <section id='locationSection'>
-      <div id='locationSectionChild'>
-        <h1>Locations</h1>
-        <h3>Our Branch and Service Area</h3>
+      <div id='locationSectinoChild'>
+        <h1>
+          Here are our branches
+        </h1>
         <Paper sx={{ width: '100%', overflow: 'hidden' }}>
           <TableContainer sx={{ maxHeight: 440 }}>
             <Table stickyHeader aria-label="sticky table">
