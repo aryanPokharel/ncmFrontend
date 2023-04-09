@@ -50,7 +50,7 @@ const Navbar = () => {
           <a href="/location">Location</a>
         </li>
         <li>
-          <a href="/jobs">Jobs</a>
+          <a href="https://recruit.nepalcangroup.com/careers" target='new'>Jobs</a>
         </li>
         <li>
           {

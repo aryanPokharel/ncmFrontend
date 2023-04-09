@@ -1,20 +1,21 @@
 
 #newsMedia{
-    background-color: red;
     width:190rem;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem;
 }
 #newsMediaChild2{
-    background-color: blue;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     height: inherit;
-    width: 140rem;
+    width: 80%;
+    
 }
 #blogCard{
     background-color: lightblue;

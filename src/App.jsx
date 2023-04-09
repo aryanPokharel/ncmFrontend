@@ -30,7 +30,7 @@ function App() {
           <Route path='/contact' element={<Contact />} />
 
           <Route path='/newsMedia' element={<NewsMedia />} />
-          <Route path='/locations' element={<Location />} />
+          <Route path='/location' element={<Location />} />
         </Routes>
       </BrowserRouter>
       <GetInTouch />
