@@ -1,5 +1,7 @@
 import * as React from 'react';
 import { useState } from 'react'
+import Button from '@mui/material/Button';
+
 
 import './NewsMedia.css'
 
@@ -47,9 +49,9 @@ const NewsMedia = () => {
       <div id='newsMediaChild2'>
         <div className="row row-cols-1 row-cols-md-3 g-4">
           {blogData.map((blog) => (
-   
+
             <div className="col">
-              <div className="card h-100">
+              <div className="card h-100" id='blogCard'>
                 <img
                   src={blog.image}
                   className="card-img-top"
@@ -59,7 +61,7 @@ const NewsMedia = () => {
                 <div className="card-body">
                   <h5 className="card-title">{blog.title}</h5>
                   <p className="card-text">
-                    {blog.content}
+                    {blog.content.slice(0, 100)}
                   </p>
                 </div>
                 <div className="card-footer">
@@ -68,6 +70,11 @@ const NewsMedia = () => {
                 <hr></hr>
                 <div className="card-footer">
                   <small className="text-muted">{blog.tags}</small>
+                </div>
+                <div className="card-footer">
+                  <Button variant="contained" color="success">
+                    Read More
+                  </Button>
                 </div>
               </div>
             </div>

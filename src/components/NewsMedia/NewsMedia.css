@@ -16,3 +16,9 @@
     height: inherit;
     width: 140rem;
 }
+#blogCard{
+    background-color: lightblue;
+}
+#blogCard:hover{
+    background-color: antiquewhite;
+}
