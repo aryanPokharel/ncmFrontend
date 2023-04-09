@@ -43,7 +43,7 @@ const NewsMedia = () => {
 
   return (
     <section id='newsMedia'>
-      <div id='newsMediaChild1'>
+      <div id='newsMediaChild2'>
         {blogData.map((blog) => (
           <BlogCard key={blog.title} title={blog.title} date={blog.date} content={blog.content} tags={blog.tags} />
         ))}

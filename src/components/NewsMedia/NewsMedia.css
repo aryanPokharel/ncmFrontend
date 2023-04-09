@@ -3,16 +3,16 @@
     background-color: red;
     width:100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 1rem;
 }
-#newsMediaTabSection{
+#newsMediaChild2{
     background-color: blue;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     height: inherit;
-    width: 20rem;
+    width: 80rem;
 }
