@@ -15,32 +15,7 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 const Section4 = () => {
-  // var [employeeState, setEmployeeState] = useState(0);
-  // var [branchState, setBranchState] = useState(0);
-  // var [clientState, setClientState] = useState(0);
-  // var [orderState, setOrderState] = useState(0);
-
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     if (employeeState < 600){
-  //       setEmployeeState(employeeState + 1);
-  //     }
-  //     if (branchState < 200){
-  //       setBranchState(branchState + 1);
-  //     }
-  //     if (clientState < 3000){
-  //       setClientState(clientState + 1);
-  //     }
-  //     if (orderState < 2){
-  //       setOrderState(orderState + 1);
-  //     }
-
-  //   }, 10);
-
-  //   return () => {
-  //     clearInterval(interval);
-  //   };
-  // });
+  
   const [counters, setCounters] = useState({
     employee: 0,
     branch: 0,
@@ -66,14 +41,14 @@ const Section4 = () => {
         }
         return updatedCounters;
       });
-    }, 10);
+    }, 1);
     return () => clearInterval(interval);
   }, []);
   return (
     <div id='section4'>
       <h1>Numbers Speak!</h1>
       <h3>We have made a good start to realize our Vision 2030.</h3>
-
+      
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={0} sx={{ flexWrap: "nowrap", flexDirection: { xs: "column", sm: "column", md: "row" } }}>
           {Array.from(Array(4)).map((_, index) => (
