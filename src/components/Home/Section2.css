@@ -5,7 +5,17 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: red;
+  background-color: rgb(199, 192, 192);
+}
+#stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#item2 {
+  width: 70%;
 }
 #item3 {
   display: flex;

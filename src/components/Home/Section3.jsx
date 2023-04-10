@@ -44,12 +44,11 @@ const Section3 = () => {
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
   return (
-    <Box sx={{ width: '100%' }}>
+    <Box sx={{ width: '100%' }} id='section3'>
       <Stack spacing={2}>
-        <Item className='stackItem'>
+     
           <h2 id='ourStories'>Our Stories</h2>
-        </Item>
-        <Item className='stackItem'>
+    
           <Stack direction={isSmallScreen ? "column" : "row"} spacing={2} justifyContent="center" alignItems="center">
                 <StoryCard
                 imageUrl={"https://i0.wp.com/www.nepalcanmove.com/wp-content/uploads/2022/01/DSC00276-Square-NCM-Delivery-R-2.1.jpg?w=511&ssl=1"}
@@ -69,7 +68,7 @@ const Section3 = () => {
                 content={"We have expanded our services to Karnali and far west, often delivering on foot, human back and donkeys. It is a challenge, but we are here to provide services to Humla and Pyuthan as much as Dharan and Birtamod."} />
             
           </Stack>
-        </Item>
+      
         <Item className='stackItem'>
           <Button variant="contained" id='track-btn'>View More</Button>
         </Item>

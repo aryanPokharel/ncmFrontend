@@ -23,7 +23,7 @@ const Section2 = () => {
   return (
     <section id="section2">
       <Box sx={{ width: '100%' }} id='sectionBox'>
-        <Stack spacing={2}>
+        <Stack spacing={2} id='stack'>
           <h1 id='item1'>
             How can we help you?
           </h1>

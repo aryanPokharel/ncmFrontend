@@ -1,4 +1,6 @@
-
+#section3{
+  background-color: gainsboro;
+}
 #section3Card {
   background-color: lightgray;
   min-height: 400px;
@@ -18,7 +20,4 @@
 #track-btn {
   margin: 1%;
   font-size: 1.5rem;
-}
-.stackItem{
-  border: 1px solid transparent;
 }
