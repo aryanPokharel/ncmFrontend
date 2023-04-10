@@ -1,7 +1,6 @@
 import * as React from "react";
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
@@ -25,20 +24,20 @@ const Contact = () => {
       <Stack>
 
         <Stack direction="row" justifyContent={"center"} alignItems={"center"} id="contactStack">
-          <Card id="contactCard">
+          <div id="contactCard">
             <CardContent id="contentHolder">
               <Typography className="cardContent" color="text.secondary" gutterBottom>
                 <h1 id="header">Contact Us</h1>
-                <hr></hr>
+                <br></br>
               </Typography>
               <Typography className="cardContent" variant="h5" component="div">
-                <h3 className="subHeader">Contact for Premium Business Services</h3>
+                <h3 className="subHeader">Contact for Premium Business Services.</h3>
               </Typography>
               <Typography className="cardContent" variant="body2">
                 <h3 className="subHeader">We always love to hear from you.</h3>
               </Typography>
             </CardContent>
-          </Card>
+          </div>
         </Stack>
 
         <Item id="formSection">
