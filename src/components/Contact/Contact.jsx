@@ -42,7 +42,7 @@ const Contact = () => {
         </Stack>
 
         <Item id="formSection">
-          <h3 className="mb-5">Get started - Request Free Consultation</h3>
+          <h1 className="mb-5">Get started - Request Free Consultation</h1>
           <div id="formAndMap">
             <div id="map">
               <iframe
@@ -53,8 +53,8 @@ const Contact = () => {
                 loading="lazy"
               />
             </div>
-            
-            <form className="text-center border border-light p-5" id="contactForm">
+
+            <form className="text-center p-5" id="contactForm">
               <input
                 type="text"
                 className="form-control"
@@ -90,7 +90,7 @@ const Contact = () => {
             <div id="contactLocationSection">
               <h2>Get In Touch</h2>
               <p>
-                <i className="fas fa-map-marker-alt fa-2x text-primary" />
+                <i className="fas fa-map-marker-alt fa-2x text-danger" />
                 <br></br>
                 <small>Nepal Can Move Building, </small><br></br>
                 <small>51 Muni Bhairab Marga, Tinkune, </small>
@@ -98,7 +98,7 @@ const Contact = () => {
                 <small>KMC-32, Kathmandu, Nepal</small>
               </p>
               <p>
-                <i className="fas fa-phone fa-2x text-primary" />
+                <i className="fas fa-phone fa-2x text-warning" />
                 <br></br>
                 <small>+977 01 519 9684</small>
                 <br></br>
