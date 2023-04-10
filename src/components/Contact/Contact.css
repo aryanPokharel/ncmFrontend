@@ -1,24 +1,20 @@
-#contactSection1 {
-  height: 50rem;
-  width: 100%;
-  background-image: url("../../assets/images/contactBg.jpg");
-  background-repeat: no-repeat;
+#contactStack{
+  background-image: url("https://images.unsplash.com/photo-1450818074504-fb9713fe584e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHw%3D&w=1000&q=80");
   background-position: center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+
+}
+#contactCard{
+  background-color: transparent;
+  border: 10px solid transparent;
+}
+#contentHolder{
+  background-color: transparent;
+}
+
+.cardContent{
+  font-size: 2.8rem;
   color: white;
-}
-#contactContent {
-  margin-inline: 2rem;
-}
-.card-columns {
-  @include media-breakpoint-only(lg) {
-    column-count: 4;
-  }
-  @include media-breakpoint-only(xl) {
-    column-count: 5;
-  }
 }
