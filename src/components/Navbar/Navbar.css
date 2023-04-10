@@ -5,7 +5,13 @@
     
 }
 .navbarBtn{
-    margin-inline: 1rem;
+    margin-inline: 0.3rem;
+}
+#loginBtn{
+    background-color: green;
+}
+#trackBtn{
+    background-color: red;
 }
 
 @media (max-width: 990px) {
