@@ -20,7 +20,8 @@ const CustomCard = (props) => {
         
       }
       <div className="card-body">
-        <h5 className="card-title">{props.title}</h5>
+        <h2 className="card-title">{props.title}</h2>
+        <hr></hr>
         <p className="card-text">{props.content}</p>
       </div>
     </div>
