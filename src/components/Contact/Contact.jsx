@@ -23,6 +23,7 @@ const Contact = () => {
   return (
     <Box sx={{ width: "100%" }}>
       <Stack>
+
         <Stack direction="row" justifyContent={"center"} alignItems={"center"} id="contactStack">
           <Card id="contactCard">
             <CardContent id="contentHolder">
@@ -33,17 +34,14 @@ const Contact = () => {
               <Typography className="cardContent" variant="h5" component="div">
                 <h3 className="subHeader">Contact for Premium Business Services</h3>
               </Typography>
-
               <Typography className="cardContent" variant="body2">
                 <h3 className="subHeader">We always love to hear from you.</h3>
-
               </Typography>
             </CardContent>
-
           </Card>
         </Stack>
-        <Item id="formSection">
 
+        <Item id="formSection">
           <h3 className="mb-5">Get started - Request Free Consultation</h3>
           <div id="formAndMap">
             <div id="map">
@@ -55,62 +53,66 @@ const Contact = () => {
                 loading="lazy"
               />
             </div>
+            
             <form className="text-center border border-light p-5" id="contactForm">
-              <p className="h1 mb-4">Sign in</p>
-
               <input
-                type="name"
-                id="defaultLoginFormEmail"
-                className="form-control mb-4"
+                type="text"
+                className="form-control"
+                aria-label="Large"
+                aria-describedby="inputGroup-sizing-sm"
                 placeholder="name"
+                style={{ fontSize: "18px" }}
               />
               <input
                 type="email"
                 id="defaultLoginFormEmail"
                 className="form-control mb-4"
                 placeholder="E-mail"
+                style={{ fontSize: "18px" }}
               />
               <input
                 type="phone"
                 id="defaultLoginFormEmail"
                 className="form-control mb-4"
                 placeholder="phone"
+                style={{ fontSize: "18px" }}
               />
-              <input
-                type="message"
-                id="defaultLoginFormEmail"
-                className="form-control mb-4"
-                placeholder="phone"
+              <textarea
+                className="form-control"
+                rows={5}
+                id="comment"
+                defaultValue={"message"}
+                style={{ fontSize: "18px" }}
               />
-              <button className="btn btn-info btn-block my-4" type="submit">
-                Sign in
-              </button>
-
+              <Button variant="contained" id='submitBtn'>Submit</Button>
             </form>
 
-
             <div id="contactLocationSection">
+              <h2>Get In Touch</h2>
               <p>
                 <i className="fas fa-map-marker-alt fa-2x text-primary" />
                 <br></br>
-                <small>New York, NY 10012, USA</small>
+                <small>Nepal Can Move Building, </small><br></br>
+                <small>51 Muni Bhairab Marga, Tinkune, </small>
+                <br></br>
+                <small>KMC-32, Kathmandu, Nepal</small>
               </p>
               <p>
                 <i className="fas fa-phone fa-2x text-primary" />
                 <br></br>
-                <small>+ 01 234 567 89</small>
+                <small>+977 01 519 9684</small>
+                <br></br>
+                <small>+977 01 519 968 4</small>
               </p>
               <p>
                 <i className="fas fa-envelope fa-2x text-primary" />
                 <br></br>
-                <small>contact@gmail.com</small>
+                <small>sales@nepalcanmove.com </small>
+                <br></br>
+                <small>support@nepalcanmove.com</small>
               </p>
-
-
             </div>
           </div>
-
-
         </Item>
       </Stack>
     </Box>
