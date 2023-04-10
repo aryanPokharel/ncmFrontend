@@ -16,8 +16,7 @@ const CustomCard = (props) => {
         (props.icon == "LocalShippingIcon") ? <LocalShippingIcon /> : 
         (props.icon == "StorageIcon") ? <StorageIcon /> :
         <AccountTreeIcon />
-        ))
-        
+        ))     
       }
       <div className="card-body">
         <h2 className="card-title">{props.title}</h2>
