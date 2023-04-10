@@ -21,30 +21,33 @@ const Section4 = () => {
   var [orderState, setOrderState] = useState(0);
 
   
-  // useEffect(() => {
+  const [counter, setCounter] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (employeeState < 600){
+        setEmployeeState(employeeState + 1);
+      }
+      if (branchState < 200){
+        setBranchState(branchState + 1);
+      }
+      if (clientState < 3000){
+        setClientState(clientState + 1);
+      }
+      if (orderState < 2){
+        setOrderState(orderState + 1);
+      }
+      
+    }, 10);
 
-    // while (employeeState <= 600) {
-    //   setEmployeeState(employeeState++)
-    // }
-
-  //   while (branchState < 600) {
-  //     branchState++
-  //   }
-
-  //   while (clientState < 600) {
-  //     clientState++
-  //   }
-
-  //   while (orderState < 600) {
-  //     orderState++
-  //   }
-
-  // }, []);
+    return () => {
+      clearInterval(interval);
+    };
+  });
   return (
     <div id='section4'>
       <h1>Numbers Speak!</h1>
       <h3>We have made a good start to realize our Vision 2030.</h3>
-
+   
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={0} sx={{ flexWrap: "nowrap", flexDirection: { xs: "column", sm: "column", md: "row" } }}>
           {Array.from(Array(4)).map((_, index) => (
@@ -58,16 +61,16 @@ const Section4 = () => {
                   :
                   (index == 1 ?
                     <div>
-                      <h2>200+</h2>
+                      <h2>{branchState}+</h2>
                       <h2>Branch Network</h2>
                     </div> :
                     (index == 2 ?
                       <div>
-                        <h2>3,000+</h2>
+                        <h2>{clientState}+</h2>
                         <h2>Satisfied Clients</h2>
                       </div> :
                       <div>
-                        <h2>2M+</h2>
+                        <h2>{orderState}+</h2>
                         <h2>Orders Delivered</h2>
                       </div>
                     )
