@@ -2,12 +2,9 @@ import * as React from 'react';
 import CustomCard from './CustomCard';
 import './Section2.css'
 
-
 const Section2 = () => {
-
   return (
     <section id="section2">
-
       <div id='section2B'>
         <div id='section2C'>
           <h1>How can we help you?</h1>
@@ -16,18 +13,15 @@ const Section2 = () => {
         </div>
         <div id="section2D">
           <div id="row">
-
             <CustomCard
               icon={"DirectionsBoatIcon"}
               title={"Cargo"}
               content={"We work closely with our partner freight forwarders to bring any cargo merchandise from anywhere in the world to Nepal."} />
 
-
             <CustomCard
               icon={"AllInboxIcon"}
               title={"Courier & delivery"}
               content={"We provide convenient home &; office pickup, and delivery to most locations in Nepal. We also provide affordable counter delivery to most of our branches."} />
-
 
             <CustomCard
               icon={"WarehouseIcon"}
@@ -42,12 +36,10 @@ const Section2 = () => {
               title={"Transport"}
               content={"We operate our own fleet to provide a range of reliable transport & trucking staff, vehicles and solutions that meet your business needs."} />
 
-
             <CustomCard
               icon={"StorageIcon"}
               title={"Technology"}
               content={"We provide advanced logistics, ecommerce, warehousing and inventory technology. We provide APIs and integration services."} />
-
 
             <CustomCard
               icon={"AccountTreeIcon"}
