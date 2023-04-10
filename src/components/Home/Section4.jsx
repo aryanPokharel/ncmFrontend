@@ -15,7 +15,7 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 const Section4 = () => {
-  
+
   const [counters, setCounters] = useState({
     employee: 0,
     branch: 0,
@@ -48,7 +48,7 @@ const Section4 = () => {
     <div id='section4'>
       <h1>Numbers Speak!</h1>
       <h3>We have made a good start to realize our Vision 2030.</h3>
-      
+
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={0} sx={{ flexWrap: "nowrap", flexDirection: { xs: "column", sm: "column", md: "row" } }}>
           {Array.from(Array(4)).map((_, index) => (
