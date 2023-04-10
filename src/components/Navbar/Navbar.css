@@ -1,0 +1,17 @@
+#navbarBtnHolder{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.navbarBtn{
+    margin-inline: 1rem;
+}
+
+@media (max-width: 990px) {
+    #navbarBtnHolder{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
