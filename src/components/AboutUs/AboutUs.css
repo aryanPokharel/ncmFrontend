@@ -1,4 +1,29 @@
-#cardDeck{
-    display: flex;
-    gap: 10px;
+
+#aboutUsCardDeck {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: red;
+}
+.aboutUsCard {
+  padding: 1rem;
+  background-color: gray;
+  height: 40vh;
+  margin: 3rem;
+}
+
+@media (max-width: 1000px){
+    #aboutUsHeading{
+        margin-inline: 3rem;
+    }
+    #aboutUsCardDeck{
+        flex-direction: column;
+    }
+    .aboutUsCard {
+        padding: 1rem;
+        background-color: gray;
+        height: 40vh;
+        margin: 1rem;
+        margin-inline: 2rem;
+      }
 }

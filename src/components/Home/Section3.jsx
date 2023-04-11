@@ -47,7 +47,7 @@ const Section3 = () => {
     <Box sx={{ width: '100%' }} id='section3'>
       <Stack spacing={2}>
      
-          <h2 id='ourStories'>Our Stories</h2>
+          <h1 id='ourStories'>Our Stories</h1>
     
           <Stack direction={isSmallScreen ? "column" : "row"} spacing={2} justifyContent="center" alignItems="center">
                 <StoryCard

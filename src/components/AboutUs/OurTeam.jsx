@@ -5,7 +5,7 @@ import './OurTeam.css'
 
 const OurTeam = () => {
     return (
-        <div>
+        <div id='teamSection'>
             <h2>
                 Our Team
             </h2>
