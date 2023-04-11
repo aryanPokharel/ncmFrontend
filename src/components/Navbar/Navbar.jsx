@@ -13,19 +13,20 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container-fluid">
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-mdb-toggle="collapse"
-          data-mdb-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <i className="fas fa-bars" />
-        </button>
+    <nav className="navbar navbar-expand-lg navbar-light bg-light" id='navbar'>
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i className="fas fa-bars" />
+      </button>
+      <div className="container-fluid" id='navbarItemContainer'>
+
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
 
