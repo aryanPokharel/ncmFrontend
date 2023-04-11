@@ -27,16 +27,18 @@ const AboutUs = () => {
                 </div>
                 <div id='aboutUsCardDeck'>
                     <div className='aboutUsCard'>
-                        <h5>Who Are We</h5>
+                        <h1>Who Are We</h1>
                         <p>
-                            We focus on the major problems in trade, commerce and logistics and solve them using Australian management, and technology.
+                            We focus on the major problems in trade, commerce and logistics and solve them using Australian management,
+                            and technology.
                             We think business in terms of systems. The better the system is the better the business is.
                             Our systems offer you a complete solution with predicable outcomes in record times. Give us your problems.
-                            We use our systems i.e. the power of tech and good management to plan a predictable and consistent solution every time.
+                            We use our systems i.e. the power of tech and good management to plan a predictable and consistent
+                            solution every time.
                         </p>
                     </div>
                     <div className='aboutUsCard'>
-                        <h5>Our Mission</h5>
+                        <h1>Our Mission</h1>
                         <p>
                             Everyday, more than 400 staff driven with CAN culture are out there at your service.
                             We believe prosperity comes from logistic, trade and ecommerce infrastructure.
@@ -46,20 +48,20 @@ const AboutUs = () => {
                         </p>
                     </div>
                     <div className='aboutUsCard'>
-                        <h5>What We Do</h5>
+                        <h1>What We Do</h1>
                         <p>
                             Cargo which includes import and export.
                             Courier & delivery - we can deliver to most locations in Nepal
                             Logistics & warehousing - we can receive, manage and fulfill.
                             Transport - we can provide you fleet management & transport solutions
                             Technology - advanced eCommerce banking and logistic tech
-                            Projects - we deliver aid and help meet your project logsitics needs
+                            Projects - we deliver aid and help meet your project logsitics needs.
                         </p>
                     </div>
                 </div>
                 <CardDeck />
-                <Item>Item 2</Item>
-                <Item>Item 3</Item>
+                <ChooseUs />
+                <OurTeam />
             </Stack>
         </Box>
 

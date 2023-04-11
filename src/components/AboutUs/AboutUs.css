@@ -1,35 +1,41 @@
-
 #aboutUsCardDeck {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: red;
   padding-inline: 3rem;
+  background-color: green;
 }
 .aboutUsCard {
-  padding: 1rem;
-  background-color: gray;
+  padding: 2rem;
   height: 40vh;
   margin: 2rem;
+  background-color: gainsboro;
+  box-shadow: 15px 14px 14px 14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
-@media (max-width : 1800px){
-    .aboutUsCard{
-        height: 70vh;
-    }
-}
+/* @media (max-width: 1800px) {
+  .aboutUsCard {
+    height: 70vh;
+  }
+} */
 
-@media (max-width: 1000px){
-    #aboutUsHeading{
-        margin-inline: 3rem;
-    }
-    #aboutUsCardDeck{
-        flex-direction: column;
-    }
-    .aboutUsCard {
-        padding: 1rem;
-        background-color: gray;
-        height: 40vh;
-        margin: 1rem;
-        margin-inline: 2rem;
-      }
+@media (max-width: 1000px) {
+  #aboutUsHeading {
+    margin-inline: 3rem;
+  }
+  #aboutUsCardDeck {
+    flex-direction: column;
+    padding-inline:1;
+    
+  }
+  .aboutUsCard {
+    padding: 1.2rem;
+    height: fit-content;
+    margin: 1rem;
+    margin-inline: 2rem;
+    overflow: hidden;
+  }
 }

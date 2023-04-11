@@ -1,6 +1,4 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
@@ -41,19 +39,19 @@ const cardData = [
 
 const ReturnCardInfo = (info) => {
     return (
-        <Card sx={{ minWidth: 275 }}>
+        <Card sx={{ minWidth: 275 }} id='card'>
             
-            <CardContent  id='card'>
+            <CardContent  id='cardContent'>
                 <Typography sx={{ fontSize: 16 }} color="text.secondary" gutterBottom >
                     {info.cardNumber+1}
                 </Typography>
-                <Typography variant="h5" component="div">
+                <Typography variant="h3" component="div" id='cardTitle'>
                 {cardData[info.cardNumber].title}
                 </Typography>
                 <Typography sx={{ mb: 1.5 }} color="text.secondary">
                     
                 </Typography>
-                <Typography variant="body2">
+                <Typography variant="body2" id='cardDescription'>
                 {cardData[info.cardNumber].content}
                     <br />
                     
@@ -66,7 +64,7 @@ const ReturnCardInfo = (info) => {
 
 const CardDeck = () => {
     return (
-        <div id='cardDeckColumn'>
+        <div id='cardDeck'>
             <div className='cardDeckRow'>
                 <ReturnCardInfo cardNumber={0} />
                 <ReturnCardInfo cardNumber={1} />
