@@ -21,7 +21,8 @@ const ChooseUs = () => {
                 p: 2,
                 margin: 'auto',
                 flexGrow: 1,
-                backgroundColor: "burlywood"
+                backgroundColor: "rgb(175, 173, 173)",
+               
             }}
         >
             <Grid container spacing={2}>
@@ -30,7 +31,7 @@ const ChooseUs = () => {
                         <Img
                             height={"100%"}
                             width={"100%"}
-                            
+
                             alt="teamWork"
                             src="https://media.istockphoto.com/id/1075972590/vector/hand-united-together-form-lines-triangles-and-particle-style-design-illustration-vector.jpg?s=612x612&w=0&k=20&c=FhGyRn8ThLncMbogiXDRBOd72lLNb-I7gSiKE3gnPNY=" />
                     </ButtonBase>
@@ -52,7 +53,7 @@ const ChooseUs = () => {
                         </blockquote>
 
                         <blockquote className="blockquote">
-                            <p className="mb-0" style={{fontSize:"1.5rem", fontWeight: "bold", color:"white"}}>
+                            <p className="mb-0" style={{ fontSize: "1.5rem", fontWeight: "bold", color: "white" }}>
                                 Everyday, more than 400 staff driven with CAN culture are out there at your service.
                                 We believe prosperity comes from logistic, trade and ecommerce infrastructure.
                                 We are marching towards CAN VISION™ 2030 and will establish branches in each of 753 municipalities,

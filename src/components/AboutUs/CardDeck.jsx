@@ -76,15 +76,6 @@ const CardDeck = () => {
             <ReturnCardInfo cardNumber={5} />
             </div>
         </div>
-        // <Box sx={{ flexGrow: 1 }}>
-        //     <Grid container spacing={2} >
-        //         {Array.from(Array(6)).map((_, index) => (
-        //             <Grid item xs={2} sm={4} md={4} key={index}>
-        //                 <ReturnCardInfo cardNumber={index} />
-        //             </Grid>
-        //         ))}
-        //     </Grid>
-        // </Box>
     )
 }
 
