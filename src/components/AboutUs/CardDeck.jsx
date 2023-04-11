@@ -44,16 +44,16 @@ const ReturnCardInfo = (info) => {
         <Card sx={{ minWidth: 275 }}>
             
             <CardContent  id='card'>
-                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom >
+                <Typography sx={{ fontSize: 16 }} color="text.secondary" gutterBottom >
                     {info.cardNumber+1}
                 </Typography>
-                <Typography variant="h5" component="div"  id='card'>
+                <Typography variant="h5" component="div">
                 {cardData[info.cardNumber].title}
                 </Typography>
                 <Typography sx={{ mb: 1.5 }} color="text.secondary">
                     
                 </Typography>
-                <Typography variant="body2"  id='card'>
+                <Typography variant="body2">
                 {cardData[info.cardNumber].content}
                     <br />
                     
@@ -66,15 +66,27 @@ const ReturnCardInfo = (info) => {
 
 const CardDeck = () => {
     return (
-        <Box sx={{ flexGrow: 1 }}>
-            <Grid container spacing={2} >
-                {Array.from(Array(6)).map((_, index) => (
-                    <Grid item xs={2} sm={4} md={4} key={index}>
-                        <ReturnCardInfo cardNumber={index} />
-                    </Grid>
-                ))}
-            </Grid>
-        </Box>
+        <div id='cardDeckColumn'>
+            <div className='cardDeckRow'>
+                <ReturnCardInfo cardNumber={0} />
+                <ReturnCardInfo cardNumber={1} />
+                <ReturnCardInfo cardNumber={2} />
+            </div>
+            <div className='cardDeckRow'>
+            <ReturnCardInfo cardNumber={3} />
+            <ReturnCardInfo cardNumber={4} />
+            <ReturnCardInfo cardNumber={5} />
+            </div>
+        </div>
+        // <Box sx={{ flexGrow: 1 }}>
+        //     <Grid container spacing={2} >
+        //         {Array.from(Array(6)).map((_, index) => (
+        //             <Grid item xs={2} sm={4} md={4} key={index}>
+        //                 <ReturnCardInfo cardNumber={index} />
+        //             </Grid>
+        //         ))}
+        //     </Grid>
+        // </Box>
     )
 }
 
