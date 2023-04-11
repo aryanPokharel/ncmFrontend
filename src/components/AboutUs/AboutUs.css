@@ -1,3 +1,6 @@
+#aboutUsStack{
+    background-color: aliceblue;
+}
 #aboutUsCardDeck {
   display: flex;
   justify-content: space-between;
@@ -9,7 +12,8 @@
   height: 40vh;
   margin: 2rem;
   background-color: gainsboro;
-  box-shadow: 15px 14px 14px 14px rgba(0, 0, 0, 0.25);
+  border-radius: 3rem;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.25);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

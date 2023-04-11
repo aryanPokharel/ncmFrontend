@@ -19,7 +19,7 @@ const Item = styled(Paper)(({ theme }) => ({
 const AboutUs = () => {
     return (
         <Box sx={{ width: '100%' }}>
-            <Stack spacing={2}>
+            <Stack spacing={2} id='aboutUsStack'>
                 <div id='aboutUsHeading'>
                     <h1>About Us</h1>
                     <h2>You are in the company of CAN people</h2>
@@ -64,10 +64,6 @@ const AboutUs = () => {
                 <OurTeam />
             </Stack>
         </Box>
-
-        // <CardDeck />
-        // <ChooseUs />
-        // <OurTeam />
 
     )
 }

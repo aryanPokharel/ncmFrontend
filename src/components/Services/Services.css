@@ -1,43 +1,44 @@
-#serviceSection1{
-    height: 50rem;
-    width: 100%;
-    background-image: url("../../assets/images/servicesBg.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#serviceSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#serviceSection1 {
+  height: 50rem;
+  width: 100%;
+  background-image: url("../../assets/images/servicesBg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
-    color : white
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding-inline: 3rem;
+  color: white;
 }
-#servicesContent{
-    margin-inline: 2rem;
+.serviceCardRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: red;
+  margin-block: 3rem;
+  width: 100%;
+  justify-content: center;
+  align-self: center;
 }
-#serviceCard{
-    background-color: lightblue;
-    padding: 2rem;
-    min-width: 30rem;
-    max-width: 40rem;
+#serviceCard {
+  margin-inline: 3rem;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  height: 30vh;
+  width: 20vw;
+  padding-inline: 3rem;
 }
-#serviceCard *{
-    font-size: 1.6rem;
-}
-#serviceHeading{
-    color: red;
-    font-weight: bold;
-    font-size: 1.7rem;
-}
-#serviceCard:hover{
-    box-shadow: 0.5rem 0.5rem 0.5rem;
-}
-.card-columns {
-    @include media-breakpoint-only(lg) {
-      column-count: 4;
-    }
-    @include media-breakpoint-only(xl) {
-      column-count: 5;
-    }
-  }
-  
