@@ -20,8 +20,16 @@
     height: 70vh;
   }
 } */
-
-@media (max-width: 1000px) {
+@media (max-width : 1840px){
+    .aboutUsCard{
+        height: 60vh;
+    }
+    @media (max-width : 1500px){
+        .aboutUsCard{
+            height: 80vh;
+        }
+}
+@media (max-width: 1200px) {
   #aboutUsHeading {
     margin-inline: 3rem;
   }

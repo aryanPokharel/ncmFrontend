@@ -1,0 +1,10 @@
+
+
+@media (max-width : 1400px){
+    #chooseUsGrid{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

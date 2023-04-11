@@ -6,6 +6,8 @@ import Stack from '@mui/material/Stack';
 import ButtonBase from '@mui/material/ButtonBase';
 import AboutUsAccordion from './AboutUsAccordion';
 
+import './ChooseUs.css'
+
 
 const Img = styled('img')({
     margin: 'auto',
@@ -25,7 +27,7 @@ const ChooseUs = () => {
                
             }}
         >
-            <Grid container spacing={2}>
+            <Grid container spacing={2} id="chooseUsGrid">
                 <Grid item>
                     <ButtonBase sx={{ width: "100%", height: "100%" }}>
                         <Img
