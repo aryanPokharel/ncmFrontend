@@ -1,23 +1,52 @@
-#section3{
+#section3 {
   background-color: gainsboro;
 }
+#storyCardStack {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 #section3Card {
-  background-color: lightgray;
-  min-height: 400px;
-  max-height: 400px;
-  margin-top: 5px;
-  object-fit: cover;
-  font-size: 1.5rem;
-  border: 0;
+  height: 60vh;
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
 }
 #section3Card:hover {
   box-shadow: 15px 14px 14px rgba(0, 0, 0, 0.25);
 }
-#cardContent{
-  font-size: 1.5rem;
+#imageSection {
+  width: 100%;
+}
+#cardContentSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+#cardContent {
+  font-size: 1.7rem;
   border: 0px;
 }
 #track-btn {
   margin: 1%;
   font-size: 1.5rem;
+  justify-self: center;
+  align-self: center;
+}
+
+@media (max-width: 1200px) {
+  #storyCardStack {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #section3Card {
+    height: 70vh;
+  }
 }

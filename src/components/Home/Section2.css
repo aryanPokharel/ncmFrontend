@@ -5,7 +5,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(199, 192, 192);
+  background-color: aliceblue;
+  padding: 1rem;
 }
 #stack {
   display: flex;
