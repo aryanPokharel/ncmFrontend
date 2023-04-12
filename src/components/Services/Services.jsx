@@ -31,13 +31,16 @@ const Services = () => {
         </div>
         <div className='serviceCardRow'>
           <Card id='serviceCard' >
-            <CardContent>
+            <CardContent className='CardContent'>
+              <div id='cardTitle'>
 
-              <ShoppingCartIcon style={{ width: '40px', height: '40px' }} />
+                <ShoppingCartIcon style={{ width: '40px', height: '40px', color : 'red' }} />
 
-              <Typography variant="h3" component="div" id='serviceHeading'>
-                eCommerce delivery & COD
-              </Typography>
+                <Typography variant="h3" component="div" id='serviceHeading'>
+                  eCommerce delivery & COD
+                </Typography>
+              </div>
+
 
               <Typography variant="body4">
                 We provide ecommerce pickup from your office or home and delivery to your customer's
@@ -49,11 +52,13 @@ const Services = () => {
 
           </Card>
           <Card id='serviceCard' >
-            <CardContent>
-              <WarehouseIcon style={{ width: '40px', height: '40px' }} />
+            <CardContent className='CardContent'><div id='cardTitle'>
+
+              <WarehouseIcon style={{ width: '40px', height: '40px', color : 'red' }} />
               <Typography variant="h3" component="div" id='serviceHeading'>
                 Warehousing & inventory
               </Typography>
+            </div>
 
               <Typography variant="body4">
                 We provide warehousing and inventory services at key locations. We can receive your inventory,
@@ -65,11 +70,13 @@ const Services = () => {
 
           </Card>
           <Card id='serviceCard' >
-            <CardContent>
-              <DirectionsBoatIcon style={{ width: '40px', height: '40px' }} />
+            <CardContent className='CardContent'><div id='cardTitle'>
+
+              <DirectionsBoatIcon style={{ width: '40px', height: '40px', color : 'red' }} />
               <Typography variant="h3" component="div" id='serviceHeading'>
                 Export
               </Typography>
+            </div>
 
               <Typography variant="body4">
                 We can export items to most countries from Nepal, including Australia, China, Europe, India US, UK, UAE at most affordable rates.
@@ -82,11 +89,14 @@ const Services = () => {
         </div>
         <div className='serviceCardRow'>
           <Card id='serviceCard' >
-            <CardContent>
-              <MailLockIcon style={{ width: '40px', height: '40px' }} />
-              <Typography variant="h3" component="div" id='serviceHeading'>
-                Express mail & parcels
-              </Typography>
+            <CardContent className='CardContent'>
+              <div id='cardTitle'>
+
+                <MailLockIcon style={{ width: '40px', height: '40px', color : 'red' }} />
+                <Typography variant="h3" component="div" id='serviceHeading'>
+                  Express mail & parcels
+                </Typography>
+              </div>
 
               <Typography variant="body4">
                 We provide corporate express mail & parcel services, which includes prepaid satchels,
@@ -98,11 +108,14 @@ const Services = () => {
 
           </Card>
           <Card id='serviceCard' >
-            <CardContent>
-              <PriceChangeIcon style={{ width: '40px', height: '40px' }} />
-              <Typography variant="h3" component="div" id='serviceHeading'>
-                Banking & financial
-              </Typography>
+            <CardContent className='CardContent'>
+              <div id='cardTitle'>
+
+                <PriceChangeIcon style={{ width: '40px', height: '40px', color : 'red' }} />
+                <Typography variant="h3" component="div" id='serviceHeading'>
+                  Banking & financial
+                </Typography>
+              </div>
 
               <Typography variant="body4">
                 We provide agency services for home banking, account opening, cards delivery,
@@ -114,11 +127,13 @@ const Services = () => {
 
           </Card>
           <Card id='serviceCard' >
-            <CardContent>
-              <AccountCircleIcon style={{ width: '40px', height: '40px' }} />
+            <CardContent className='CardContent'><div id='cardTitle'>
+
+              <AccountCircleIcon style={{ width: '40px', height: '40px', color : 'red' }} />
               <Typography variant="h3" component="div" id='serviceHeading'>
                 Project services
               </Typography>
+            </div>
 
               <Typography variant="body4">
                 We provide aid delivery & project logistics management services to government and NGOs,
