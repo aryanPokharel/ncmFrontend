@@ -1,25 +1,35 @@
-
-#newsMedia{
-    width:190rem;
-    height: 100%;
-    display: flex;
+#newsMedia {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  padding-inline: 15rem;
+  background-color: gainsboro;
+}
+#newsMediaChild2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+}
+#blogCard {
+  background-color: lightblue;
+  border-radius: 5rem;
+}
+#blogCard:hover {
+  background-color: antiquewhite;
+}
+@media (max-width: 1800px) {
+    #newsMedia{
+        padding-inline:3rem;
+    }
+  #newsMediaChild2 {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-}
-#newsMediaChild2{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: inherit;
-    width: 80%;
-    
-}
-#blogCard{
-    background-color: lightblue;
-}
-#blogCard:hover{
-    background-color: antiquewhite;
+  }
+  #blogCard{
+    height: fit-content;
+  }
 }
