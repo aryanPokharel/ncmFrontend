@@ -22,14 +22,32 @@
 #blogCard:hover {
   background-color: antiquewhite;
 }
+#blogImage {
+  border-radius: 5rem;
+  max-width: fit-content;
+  justify-self: center;
+  align-self:center;
+}
+#readBlogBtn{
+  background-color: green;
+  height: 4rem;
+  font-size: large;
+  margin: 2rem;
+}
+#closeBlogBtn{
+  background-color: red;
+  height: 4rem;
+  font-size: large;
+  margin: 2rem;
+}
 @media (max-width: 1800px) {
-    #newsMedia{
-        padding-inline:3rem;
-    }
+  #newsMedia {
+    padding-inline: 3rem;
+  }
   #newsMediaChild2 {
     flex-direction: column;
   }
-  #blogCard{
+  #blogCard {
     height: fit-content;
   }
 }

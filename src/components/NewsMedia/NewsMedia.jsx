@@ -44,47 +44,110 @@ const NewsMedia = () => {
     },
   ]);
 
+  const [showBlogs, setShowBlogs] = useState(true);
+  const [selectedBlog, setSelectedBlog] = useState(
+    blogData[0]
+  );
+
+  const handleReadMore = (theBlog) => {
+    setSelectedBlog(theBlog)
+    setShowBlogs(false)
+  }
+
+  const handleClose = () => {
+    setShowBlogs(true)
+  }
   return (
     <section id='newsMedia'>
-      <div id='newsMediaChild1'>
-        <h2>We always have contents for you...</h2>
-      </div>
-      <div id='newsMediaChild2'>
-        <div className="row row-cols-1 row-cols-md-3 g-4">
-          {blogData.map((blog) => (
+      {
+        showBlogs ?
+          <>
+            <div id='newsMediaChild1'>
+              <h2>We always have contents for you...</h2>
+            </div>
+            <div id='newsMediaChild2'>
+              <div className="row row-cols-1 row-cols-md-3 g-4">
+                {blogData.map((blog) => (
 
-            <div className="col">
-              <div className="card h-100" id='blogCard'>
-                <img
-                  src={blog.image}
-                  className="card-img-top"
-                  alt="Skyscrapers"
-                  height={"300rem"}
-                />
-                <div className="card-body">
-                  <h2 className="card-title">{blog.title}</h2>
-                  <hr></hr>
-                  <p className="card-text">
-                    {blog.content.slice(0, 100)}..
-                  </p>
-                </div>
-                <div className="card-footer">
-                  <small className="text-muted">{blog.date}</small>
-                </div>
-                <hr></hr>
-                <div className="card-footer">
-                  <small className="text-muted">{blog.tags}</small>
-                </div>
-                <div className="card-footer">
-                  <Button variant="contained" color="success">
-                    Read More
-                  </Button>
-                </div>
+                  <div className="col" key={blog.title}>
+                    <div className="card h-100" id='blogCard'>
+                      <img
+                        src={blog.image}
+                        className="card-img-top"
+                        alt="Skyscrapers"
+                        height={"300rem"}
+                        id='blogImage'
+                      />
+                      <div className="card-body">
+                        <h2 className="card-title">{blog.title}</h2>
+                        <hr></hr>
+                        <p className="card-text">
+                          {blog.content.slice(0, 100)}..
+                        </p>
+                      </div>
+                      <div className="card-footer">
+                        <small className="text-muted">{blog.date}</small>
+                      </div>
+                      <hr></hr>
+                      <div className="card-footer">
+                        <small className="text-muted">{blog.tags}</small>
+                      </div>
+                      <div className="card-footer">
+                        <Button
+                          onClick={
+                            () => {
+                              handleReadMore(blog)
+                            }
+                          }
+                          variant="contained"
+                          id='readBlogBtn'>
+                          Read More
+                        </Button>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
-          ))}
-        </div>
-      </div>
+          </>
+          :
+          <div className="col" key={selectedBlog.title}>
+            <div className="card h-100" id='blogCard'>
+              <img
+                src={selectedBlog.image}
+                className="card-img-top"
+                alt="Skyscrapers"
+                height={"300rem"}
+                id='blogImage'
+              />
+              <div className="card-body">
+                <h2 className="card-title">{selectedBlog.title}</h2>
+                <hr></hr>
+                <p className="card-text">
+                  {selectedBlog.content}
+                </p>
+              </div>
+              <div className="card-footer">
+                <small className="text-muted">{selectedBlog.date}</small>
+              </div>
+              <hr></hr>
+              <div className="card-footer">
+                <small className="text-muted">{selectedBlog.tags}</small>
+              </div>
+              <div className="card-footer">
+                <Button
+                  onClick={
+                    handleClose
+                  }
+                  variant="contained"
+                  id='closeBlogBtn'
+                >
+                  Close
+                </Button>
+              </div>
+            </div>
+          </div>
+      }
     </section>
   )
 }
