@@ -6,10 +6,10 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  background-color: yellow;
 }
 #section3Card {
   height: 60vh;
-  width: 50rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -31,7 +31,6 @@
 }
 #cardContent {
   font-size: 1.7rem;
-  border: 0px;
 }
 #track-btn {
   margin: 1%;
@@ -47,6 +46,39 @@
     align-items: center;
   }
   #section3Card {
-    height: 70vh;
+    height: 50vh;
+    min-width: 80%;
+  }
+  #cardContentSection {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #cardContent {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  #storyCardStack {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #section3Card {
+    height: fit-content;
+    min-width: 80%;
+  }
+  #cardContentSection {
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #cardContent {
+    font-size: 2rem;
   }
 }

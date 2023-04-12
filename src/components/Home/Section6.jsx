@@ -16,7 +16,7 @@ const Section6 = () => {
 
     return (
         <section id='section6'>
-            <div className="flip-box">
+            <div className="flip-box" id='flipBox'>
                 <div className="flip-box-inner">
                     <div className="flip-box-front">
                         <div id='frontSide'>

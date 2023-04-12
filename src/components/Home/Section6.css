@@ -58,3 +58,9 @@
   justify-content: space-around;
   align-items: center;
 }
+
+@media (max-width: 1000px) {
+  #flipBox {
+    height: 60vh;
+  }
+}
