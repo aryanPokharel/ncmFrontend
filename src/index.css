@@ -14,7 +14,7 @@
   -webkit-text-size-adjust: 100%;
   font-size: 10px;
 }
-*{
+* {
   font-size: large;
 }
 
@@ -70,4 +70,10 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+.MuiTablePagination-selectLabel {
+  font-size: 2rem !important;
+}
+.MuiTablePagination-displayedRows {
+  font-size: 2rem !important;
 }

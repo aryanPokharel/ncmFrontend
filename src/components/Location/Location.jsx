@@ -74,7 +74,7 @@ const Location = () => {
   };
   return (
     <section id='locationSection'>
-      <div id='locationSectinoChild'>
+      <div id='locationSectionChild'>
         <h1>
           Here are our branches
         </h1>
@@ -89,7 +89,7 @@ const Location = () => {
                       align={column.align}
                       style={{ minWidth: column.minWidth }}
                     >
-                      {column.label}
+                      <h1>{column.label}</h1>
                     </TableCell>
                   ))}
                 </TableRow>
@@ -103,10 +103,14 @@ const Location = () => {
                         {columns.map((column) => {
                           const value = row[column.id];
                           return (
-                            <TableCell key={column.id} align={column.align}>
-                              {column.format && typeof value === 'number'
-                                ? column.format(value)
-                                : value}
+                            <TableCell
+                              key={column.id}
+                              align={column.align}>
+                              <h3>
+                                {column.format && typeof value === 'number'
+                                  ? column.format(value)
+                                  : value}
+                              </h3>
                             </TableCell>
                           );
                         })}
@@ -124,7 +128,9 @@ const Location = () => {
             page={page}
             onPageChange={handleChangePage}
             onRowsPerPageChange={handleChangeRowsPerPage}
+            id='tablePagination'
           />
+
         </Paper>
       </div>
     </section>
