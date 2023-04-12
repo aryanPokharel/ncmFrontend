@@ -12,10 +12,10 @@
 #contactCard {
   background-color: transparent;
   width: 50rem;
-  border:none;
+  border: none;
 }
 .cardContent {
-  color: red;
+  color: whitesmoke;
 }
 #header {
   font-size: 3rem;
@@ -62,13 +62,14 @@
   height: 50vh;
   width: 60rem;
 }
-#submitBtn{
+#submitBtn {
   width: 10rem;
   height: 5vh;
   font-size: 1.9rem;
+  margin-top: 1rem;
   background-color: green;
 }
-#contactLocationSection{
+#contactLocationSection {
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -79,8 +80,7 @@
   padding: 1rem;
 }
 
-
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
   #contactStack {
     display: flex;
     flex-direction: row;
@@ -90,7 +90,6 @@
   }
   #contactCard {
     background-color: transparent;
-  
   }
   #contentHolder {
     font-size: 1.8rem;
@@ -107,7 +106,7 @@
     width: 100%;
     height: 40rem;
   }
-  #contactForm{
+  #contactForm {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;

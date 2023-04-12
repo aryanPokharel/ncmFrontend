@@ -1,9 +1,7 @@
 import * as React from 'react';
-import Stack from '@mui/material/Stack';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
-
 import DirectionsBoatIcon from '@mui/icons-material/DirectionsBoat';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import WarehouseIcon from '@mui/icons-material/Warehouse';
@@ -34,7 +32,9 @@ const Services = () => {
         <div className='serviceCardRow'>
           <Card id='serviceCard' >
             <CardContent>
-              <ShoppingCartIcon />
+
+              <ShoppingCartIcon style={{ width: '40px', height: '40px' }} />
+
               <Typography variant="h3" component="div" id='serviceHeading'>
                 eCommerce delivery & COD
               </Typography>
@@ -50,7 +50,7 @@ const Services = () => {
           </Card>
           <Card id='serviceCard' >
             <CardContent>
-              <WarehouseIcon />
+              <WarehouseIcon style={{ width: '40px', height: '40px' }} />
               <Typography variant="h3" component="div" id='serviceHeading'>
                 Warehousing & inventory
               </Typography>
@@ -66,7 +66,7 @@ const Services = () => {
           </Card>
           <Card id='serviceCard' >
             <CardContent>
-              <DirectionsBoatIcon />
+              <DirectionsBoatIcon style={{ width: '40px', height: '40px' }} />
               <Typography variant="h3" component="div" id='serviceHeading'>
                 Export
               </Typography>
@@ -83,7 +83,7 @@ const Services = () => {
         <div className='serviceCardRow'>
           <Card id='serviceCard' >
             <CardContent>
-              <MailLockIcon />
+              <MailLockIcon style={{ width: '40px', height: '40px' }} />
               <Typography variant="h3" component="div" id='serviceHeading'>
                 Express mail & parcels
               </Typography>
@@ -99,7 +99,7 @@ const Services = () => {
           </Card>
           <Card id='serviceCard' >
             <CardContent>
-              <PriceChangeIcon />
+              <PriceChangeIcon style={{ width: '40px', height: '40px' }} />
               <Typography variant="h3" component="div" id='serviceHeading'>
                 Banking & financial
               </Typography>
@@ -115,7 +115,7 @@ const Services = () => {
           </Card>
           <Card id='serviceCard' >
             <CardContent>
-              <AccountCircleIcon />
+              <AccountCircleIcon style={{ width: '40px', height: '40px' }} />
               <Typography variant="h3" component="div" id='serviceHeading'>
                 Project services
               </Typography>
