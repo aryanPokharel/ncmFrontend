@@ -1,3 +1,9 @@
+#section6 {
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+  padding-inline: 3rem;
+}
 .flip-box {
   margin-top: 2rem;
   background-color: transparent;
@@ -38,12 +44,6 @@
   color: white;
   transform: rotateX(180deg);
   border-radius: 30px;
-}
-
-#section6 {
-  display: flex;
-  justify-content: center;
-  background-color: aliceblue;
 }
 #flipBack {
   display: flex;
