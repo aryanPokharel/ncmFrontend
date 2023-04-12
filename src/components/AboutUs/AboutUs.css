@@ -1,6 +1,17 @@
 #aboutUsStack {
   background-color: aliceblue;
 }
+#aboutUsHeading {
+  background-image: url("https://www.nepalcanmove.com/wp-content/uploads/2022/01/DSC00498-1-WholeOffice-R-2-e1641135768288.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
 #aboutUsCardDeck {
   display: flex;
   justify-content: center;

@@ -14,7 +14,7 @@ function Footer() {
             <h6 className="text-uppercase fw-bold mb-4">
               <img src={"https://i0.wp.com/www.nepalcanmove.com/wp-content/uploads/2022/01/NCM-Logo-White.png?resize=300%2C150&ssl=1"}
                 className="card-img-top" width={"100%"} />
-              Nepal Can Move
+             
             </h6>
             <p>
               Nepal Can Move, your full-service courier & logistic partner,
@@ -25,24 +25,24 @@ function Footer() {
 
           <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
 
-            <h6 className="text-uppercase fw-bold mb-4">Company</h6>
+            <h2 className="text-uppercase fw-bold mb-4">Company</h2>
             <p>
-              <a href="#!" className="text-reset">
+              <a href="/" className="text-reset">
                 Home
               </a>
             </p>
             <p>
-              <a href="#!" className="text-reset">
+              <a href="/about" className="text-reset">
                 About
               </a>
             </p>
             <p>
-              <a href="#!" className="text-reset">
+              <a href="/services" className="text-reset">
                 Services
               </a>
             </p>
             <p>
-              <a href="#!" className="text-reset">
+              <a href="/contact" className="text-reset">
                 Contact
               </a>
             </p>
@@ -50,9 +50,9 @@ function Footer() {
 
           <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
 
-            <h6 className="text-uppercase fw-bold mb-4">Business</h6>
+            <h2 className="text-uppercase fw-bold mb-4">Business</h2>
             <p>
-              <a href="#!" className="text-reset">
+              <a href="/about" className="text-reset">
                 Mission & Vision
               </a>
             </p>
@@ -71,7 +71,7 @@ function Footer() {
 
           <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
 
-            <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
+            <h2 className="text-uppercase fw-bold mb-4">Contact</h2>
             <p>
               <i className="fas fa-home me-3" /> Nepal Can Move Building, 51 Muni Bhairab Marga, Tinkune, KMC-32, Kathmandu, Nepal
             </p>
