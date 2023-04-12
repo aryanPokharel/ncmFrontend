@@ -12,6 +12,7 @@ import PriceChangeIcon from '@mui/icons-material/PriceChange';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 import './Services.css'
+import GetInTouch from '../GetInTouch/GetInTouch';
 
 
 const Services = () => {
@@ -130,6 +131,7 @@ const Services = () => {
           </Card>
         </div>
       </div>
+      <GetInTouch />
     </section>
   )
 }
